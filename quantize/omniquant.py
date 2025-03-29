@@ -259,22 +259,38 @@ def omniquant(
                         quant_out = qlayer(quant_inps[index:index+args.batch_size,], attention_mask=attention_mask_batch,position_ids=position_ids)[0]
                         loss = loss_func(fp_inps[index:index+args.batch_size,], quant_out)
                         if args.aug_loss:
-                            loss += loss_func(fp_inps_2[index:index+args.batch_size,], quant_out)
+                            aug_loss = loss_func(fp_inps_2[index:index+args.batch_size,], quant_out)
+                            if math.isfinite(aug_loss.item()):
+                                loss += aug_loss
+                            else:
+                                logger.info(f"Layer {i}, iter {epochs}, batch {j}: Augmentation loss is NAN")
+                                
                     if not math.isfinite(loss.item()):
-                        logger.info("Loss is NAN, stopping training")
-                        pdb.set_trace()
+                        logger.info(f"Layer {i}, iter {epochs}, batch {j}: Main loss is NAN")
+                        logger.info(f"quant_out stats: min={quant_out.min().item():.4f}, max={quant_out.max().item():.4f}, mean={quant_out.mean().item():.4f}")
+                        logger.info(f"fp_inps stats: min={fp_inps[index:index+args.batch_size,].min().item():.4f}, max={fp_inps[index:index+args.batch_size,].max().item():.4f}, mean={fp_inps[index:index+args.batch_size,].mean().item():.4f}")
+                        # 跳过这个批次的反向传播
+                        continue
                         
                     loss_list.append(loss.detach().cpu())
                     optimizer.zero_grad()
-                    norm = loss_scaler(loss, optimizer,parameters= get_omni_parameters(qlayer, use_shift)).cpu()
+                    norm = loss_scaler(loss, optimizer,parameters=get_omni_parameters(qlayer, use_shift)).cpu()
                     norm_list.append(norm.data)
 
-                loss_mean = torch.stack(loss_list).mean()
-                norm_mean = torch.stack(norm_list).mean()
+                # 检查 loss_list 是否为空
+                if len(loss_list) == 0:
+                    logger.info(f"layer {i} iter {epochs}: All batches had NAN loss, skipping mean calculation")
+                    loss_mean = float('inf')  # 或者其他标记值
+                    norm_mean = float('inf')
+                else:
+                    loss_mean = torch.stack(loss_list).mean()
+                    norm_mean = torch.stack(norm_list).mean()
+                
                 logger.info(f"layer {i} iter {epochs} loss:{loss_mean} norm:{norm_mean} max memory_allocated {torch.cuda.max_memory_allocated(lm._device) / 1024**2} ")
             clear_temp_variable(qlayer)
             del optimizer
-        qlayer.half() 
+        if not args.deactive_amp:
+            qlayer.half() 
         # real smooth and quantization
         smooth_and_quant_inplace(qlayer, args, is_llama)
         if args.epochs>0:

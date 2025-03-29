@@ -1,0 +1,49 @@
+[2025-03-27 03:33:48 root] (main.py 258): INFO Namespace(model='/workspace/volume/inference-soft-data/AE/llm/models/llama-13b-hf', cache_dir='./cache', output_dir='./log/llama-13b-w4a6', save_dir=None, resume='./log/llama-13b-w4a6/omni_parameters.pth', real_quant=False, calib_dataset='wikitext2', nsamples=128, batch_size=1, seed=2, tasks='piqa,arc_easy,arc_challenge,boolq,hellaswag,winogrande', eval_ppl=True, num_fewshot=0, wbits=4, abits=6, group_size=None, alpha=0.5, let_lr=0.005, lwc_lr=0.01, wd=0, epochs=0, let=True, lwc=True, aug_loss=True, symmetric=False, disable_zero_point=False, a_dynamic_method='per_token', w_dynamic_method='per_channel', limit=-1, multigpu=False, deactive_amp=False, attn_implementation='eager', net=None, act_scales=None, act_shifts=None)
+[2025-03-27 03:36:41 root] (main.py 324): INFO === start quantization ===
+[2025-03-27 03:36:41 root] (main.py 330): INFO load calibration from ./cache/dataloader_llama_wikitext2_128.cache
+[2025-03-27 03:36:41 root] (omniquant.py 50): INFO Starting ...
+[2025-03-27 03:36:43 root] (omniquant.py 193): INFO === Start quantize layer 0 ===
+[2025-03-27 03:36:44 root] (omniquant.py 193): INFO === Start quantize layer 1 ===
+[2025-03-27 03:36:44 root] (omniquant.py 193): INFO === Start quantize layer 2 ===
+[2025-03-27 03:36:45 root] (omniquant.py 193): INFO === Start quantize layer 3 ===
+[2025-03-27 03:36:46 root] (omniquant.py 193): INFO === Start quantize layer 4 ===
+[2025-03-27 03:36:48 root] (omniquant.py 193): INFO === Start quantize layer 5 ===
+[2025-03-27 03:36:48 root] (omniquant.py 193): INFO === Start quantize layer 6 ===
+[2025-03-27 03:36:49 root] (omniquant.py 193): INFO === Start quantize layer 7 ===
+[2025-03-27 03:36:50 root] (omniquant.py 193): INFO === Start quantize layer 8 ===
+[2025-03-27 03:36:50 root] (omniquant.py 193): INFO === Start quantize layer 9 ===
+[2025-03-27 03:36:51 root] (omniquant.py 193): INFO === Start quantize layer 10 ===
+[2025-03-27 03:36:52 root] (omniquant.py 193): INFO === Start quantize layer 11 ===
+[2025-03-27 03:36:53 root] (omniquant.py 193): INFO === Start quantize layer 12 ===
+[2025-03-27 03:36:53 root] (omniquant.py 193): INFO === Start quantize layer 13 ===
+[2025-03-27 03:36:54 root] (omniquant.py 193): INFO === Start quantize layer 14 ===
+[2025-03-27 03:36:55 root] (omniquant.py 193): INFO === Start quantize layer 15 ===
+[2025-03-27 03:36:56 root] (omniquant.py 193): INFO === Start quantize layer 16 ===
+[2025-03-27 03:36:56 root] (omniquant.py 193): INFO === Start quantize layer 17 ===
+[2025-03-27 03:36:57 root] (omniquant.py 193): INFO === Start quantize layer 18 ===
+[2025-03-27 03:36:58 root] (omniquant.py 193): INFO === Start quantize layer 19 ===
+[2025-03-27 03:36:58 root] (omniquant.py 193): INFO === Start quantize layer 20 ===
+[2025-03-27 03:36:59 root] (omniquant.py 193): INFO === Start quantize layer 21 ===
+[2025-03-27 03:37:00 root] (omniquant.py 193): INFO === Start quantize layer 22 ===
+[2025-03-27 03:37:01 root] (omniquant.py 193): INFO === Start quantize layer 23 ===
+[2025-03-27 03:37:01 root] (omniquant.py 193): INFO === Start quantize layer 24 ===
+[2025-03-27 03:37:02 root] (omniquant.py 193): INFO === Start quantize layer 25 ===
+[2025-03-27 03:37:03 root] (omniquant.py 193): INFO === Start quantize layer 26 ===
+[2025-03-27 03:37:03 root] (omniquant.py 193): INFO === Start quantize layer 27 ===
+[2025-03-27 03:37:04 root] (omniquant.py 193): INFO === Start quantize layer 28 ===
+[2025-03-27 03:37:05 root] (omniquant.py 193): INFO === Start quantize layer 29 ===
+[2025-03-27 03:37:06 root] (omniquant.py 193): INFO === Start quantize layer 30 ===
+[2025-03-27 03:37:06 root] (omniquant.py 193): INFO === Start quantize layer 31 ===
+[2025-03-27 03:37:07 root] (omniquant.py 193): INFO === Start quantize layer 32 ===
+[2025-03-27 03:37:08 root] (omniquant.py 193): INFO === Start quantize layer 33 ===
+[2025-03-27 03:37:08 root] (omniquant.py 193): INFO === Start quantize layer 34 ===
+[2025-03-27 03:37:09 root] (omniquant.py 193): INFO === Start quantize layer 35 ===
+[2025-03-27 03:37:10 root] (omniquant.py 193): INFO === Start quantize layer 36 ===
+[2025-03-27 03:37:10 root] (omniquant.py 193): INFO === Start quantize layer 37 ===
+[2025-03-27 03:37:11 root] (omniquant.py 193): INFO === Start quantize layer 38 ===
+[2025-03-27 03:37:12 root] (omniquant.py 193): INFO === Start quantize layer 39 ===
+[2025-03-27 03:37:13 root] (main.py 353): INFO 31.857640027999878
+[2025-03-27 03:37:30 root] (main.py 100): INFO load calibration from ./cache/testloader_llama_wikitext2_all.cache
+[2025-03-27 03:39:22 root] (main.py 144): INFO wikitext2 : 5.459320545196533
+[2025-03-27 03:39:22 root] (main.py 100): INFO load calibration from ./cache/testloader_llama_c4_all.cache
+[2025-03-27 03:42:18 root] (main.py 144): INFO c4 : 7.047781467437744

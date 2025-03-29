@@ -30,11 +30,15 @@ def get_act_scales(model, dataloader, num_samples=128):
     def stat_tensor(name, tensor):
         hidden_dim = tensor.shape[-1]
         tensor = tensor.view(-1, hidden_dim).abs().detach()
+        # 对activation统计了per-channel的max
         comming_max = torch.max(tensor, dim=0)[0].float().cpu()
         if name in act_scales:
             act_scales[name] = torch.max(act_scales[name], comming_max)
         else:
             act_scales[name] = comming_max
+        # torch.Size([2048, 11008]) torch.Size([11008])
+        # torch.Size([2048, 4096]) torch.Size([4096])
+        # print(tensor.shape, comming_max.shape)
 
     def stat_input_hook(m, x, y, name):
         if isinstance(x, tuple):
@@ -56,6 +60,7 @@ def get_act_scales(model, dataloader, num_samples=128):
 
     return act_scales
 
+# 用于统计和更新张量（tensor）的激活值（activation）的均值（shift）
 def get_act_shifts(model, dataloader, num_samples=128):
     model.eval()
     device = next(model.parameters()).device
@@ -67,6 +72,7 @@ def get_act_shifts(model, dataloader, num_samples=128):
         comming_max = torch.max(tensor, dim=0)[0].float().cpu()
         comming_min = torch.min(tensor, dim=0)[0].float().cpu()
         if name in act_shifts:
+            # 指数加权平均的方法来更新
             act_shifts[name] = 0.99*act_shifts[name] + 0.01 *((comming_max+comming_min)/2)
         else:
             act_shifts[name] = (comming_max+comming_min)/2

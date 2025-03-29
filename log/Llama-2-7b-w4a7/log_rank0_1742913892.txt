@@ -1,0 +1,359 @@
+[2025-03-25 14:44:52 root] (main.py 258): INFO Namespace(model='/workspace/volume/inference-soft-data/AE/llm/models/Llama-2-7b-hf', cache_dir='./cache', output_dir='./log/Llama-2-7b-w4a7', save_dir=None, resume=None, real_quant=False, calib_dataset='wikitext2', nsamples=128, batch_size=1, seed=2, tasks='piqa,arc_easy,arc_challenge,boolq,hellaswag,winogrande', eval_ppl=True, num_fewshot=0, wbits=4, abits=7, group_size=None, alpha=0.5, let_lr=0.005, lwc_lr=0.01, wd=0, epochs=10, let=True, lwc=True, aug_loss=True, symmetric=False, disable_zero_point=False, a_dynamic_method='per_token', w_dynamic_method='per_channel', limit=-1, multigpu=False, deactive_amp=False, attn_implementation='eager', net=None, act_scales=None, act_shifts=None)
+[2025-03-25 14:45:42 root] (main.py 324): INFO === start quantization ===
+[2025-03-25 14:47:23 root] (omniquant.py 50): INFO Starting ...
+[2025-03-25 14:47:24 root] (omniquant.py 193): INFO === Start quantize layer 0 ===
+[2025-03-25 14:47:40 root] (omniquant.py 274): INFO layer 0 iter 0 loss:1.8340722817811184e-05 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:47:52 root] (omniquant.py 274): INFO layer 0 iter 1 loss:1.8340722817811184e-05 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:48:04 root] (omniquant.py 274): INFO layer 0 iter 2 loss:1.8340722817811184e-05 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:48:17 root] (omniquant.py 274): INFO layer 0 iter 3 loss:1.8340722817811184e-05 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:48:29 root] (omniquant.py 274): INFO layer 0 iter 4 loss:1.8340722817811184e-05 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:48:42 root] (omniquant.py 274): INFO layer 0 iter 5 loss:1.8340722817811184e-05 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:48:54 root] (omniquant.py 274): INFO layer 0 iter 6 loss:1.8340722817811184e-05 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:49:07 root] (omniquant.py 274): INFO layer 0 iter 7 loss:1.8340722817811184e-05 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:49:19 root] (omniquant.py 274): INFO layer 0 iter 8 loss:1.8340722817811184e-05 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:49:32 root] (omniquant.py 274): INFO layer 0 iter 9 loss:1.8340722817811184e-05 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:49:34 root] (omniquant.py 193): INFO === Start quantize layer 1 ===
+[2025-03-25 14:49:49 root] (omniquant.py 274): INFO layer 1 iter 0 loss:0.017500000074505806 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:50:02 root] (omniquant.py 274): INFO layer 1 iter 1 loss:0.017500000074505806 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:50:14 root] (omniquant.py 274): INFO layer 1 iter 2 loss:0.017500000074505806 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:50:27 root] (omniquant.py 274): INFO layer 1 iter 3 loss:0.017500000074505806 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:50:39 root] (omniquant.py 274): INFO layer 1 iter 4 loss:0.017500000074505806 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:50:52 root] (omniquant.py 274): INFO layer 1 iter 5 loss:0.017500000074505806 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:51:05 root] (omniquant.py 274): INFO layer 1 iter 6 loss:0.017500000074505806 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:51:17 root] (omniquant.py 274): INFO layer 1 iter 7 loss:0.017500000074505806 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:51:30 root] (omniquant.py 274): INFO layer 1 iter 8 loss:0.017500000074505806 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:51:42 root] (omniquant.py 274): INFO layer 1 iter 9 loss:0.017500000074505806 norm:nan max memory_allocated 14382.7021484375 
+[2025-03-25 14:51:44 root] (omniquant.py 193): INFO === Start quantize layer 2 ===
+[2025-03-25 14:52:00 root] (omniquant.py 274): INFO layer 2 iter 0 loss:0.014974904246628284 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:52:13 root] (omniquant.py 274): INFO layer 2 iter 1 loss:0.014974904246628284 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:52:25 root] (omniquant.py 274): INFO layer 2 iter 2 loss:0.014974904246628284 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:52:38 root] (omniquant.py 274): INFO layer 2 iter 3 loss:0.014974904246628284 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:52:50 root] (omniquant.py 274): INFO layer 2 iter 4 loss:0.014974904246628284 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:53:03 root] (omniquant.py 274): INFO layer 2 iter 5 loss:0.014974904246628284 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:53:16 root] (omniquant.py 274): INFO layer 2 iter 6 loss:0.014974904246628284 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:53:28 root] (omniquant.py 274): INFO layer 2 iter 7 loss:0.014974904246628284 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:53:41 root] (omniquant.py 274): INFO layer 2 iter 8 loss:0.014974904246628284 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:53:54 root] (omniquant.py 274): INFO layer 2 iter 9 loss:0.014974904246628284 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:53:56 root] (omniquant.py 193): INFO === Start quantize layer 3 ===
+[2025-03-25 14:54:11 root] (omniquant.py 274): INFO layer 3 iter 0 loss:0.01541484147310257 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:54:24 root] (omniquant.py 274): INFO layer 3 iter 1 loss:0.01541484147310257 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:54:37 root] (omniquant.py 274): INFO layer 3 iter 2 loss:0.01541484147310257 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:54:49 root] (omniquant.py 274): INFO layer 3 iter 3 loss:0.01541484147310257 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:55:02 root] (omniquant.py 274): INFO layer 3 iter 4 loss:0.01541484147310257 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:55:14 root] (omniquant.py 274): INFO layer 3 iter 5 loss:0.01541484147310257 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:55:27 root] (omniquant.py 274): INFO layer 3 iter 6 loss:0.01541484147310257 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:55:40 root] (omniquant.py 274): INFO layer 3 iter 7 loss:0.01541484147310257 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:55:52 root] (omniquant.py 274): INFO layer 3 iter 8 loss:0.01541484147310257 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:56:05 root] (omniquant.py 274): INFO layer 3 iter 9 loss:0.01541484147310257 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:56:07 root] (omniquant.py 193): INFO === Start quantize layer 4 ===
+[2025-03-25 14:56:23 root] (omniquant.py 274): INFO layer 4 iter 0 loss:0.016340570524334908 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:56:36 root] (omniquant.py 274): INFO layer 4 iter 1 loss:0.016340570524334908 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:56:48 root] (omniquant.py 274): INFO layer 4 iter 2 loss:0.016340570524334908 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:57:01 root] (omniquant.py 274): INFO layer 4 iter 3 loss:0.016340570524334908 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:57:13 root] (omniquant.py 274): INFO layer 4 iter 4 loss:0.016340570524334908 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:57:26 root] (omniquant.py 274): INFO layer 4 iter 5 loss:0.016340570524334908 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:57:38 root] (omniquant.py 274): INFO layer 4 iter 6 loss:0.016340570524334908 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:57:51 root] (omniquant.py 274): INFO layer 4 iter 7 loss:0.016340570524334908 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:58:04 root] (omniquant.py 274): INFO layer 4 iter 8 loss:0.016340570524334908 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:58:16 root] (omniquant.py 274): INFO layer 4 iter 9 loss:0.016340570524334908 norm:nan max memory_allocated 14385.3896484375 
+[2025-03-25 14:58:19 root] (omniquant.py 193): INFO === Start quantize layer 5 ===
+[2025-03-25 14:58:34 root] (omniquant.py 274): INFO layer 5 iter 0 loss:0.01749456115067005 norm:nan max memory_allocated 14387.0380859375 
+[2025-03-25 14:58:47 root] (omniquant.py 274): INFO layer 5 iter 1 loss:0.01749456115067005 norm:nan max memory_allocated 14387.0380859375 
+[2025-03-25 14:59:00 root] (omniquant.py 274): INFO layer 5 iter 2 loss:0.01749456115067005 norm:nan max memory_allocated 14387.0380859375 
+[2025-03-25 14:59:12 root] (omniquant.py 274): INFO layer 5 iter 3 loss:0.01749456115067005 norm:nan max memory_allocated 14387.0380859375 
+[2025-03-25 14:59:25 root] (omniquant.py 274): INFO layer 5 iter 4 loss:0.01749456115067005 norm:nan max memory_allocated 14387.0380859375 
+[2025-03-25 14:59:38 root] (omniquant.py 274): INFO layer 5 iter 5 loss:0.01749456115067005 norm:nan max memory_allocated 14387.0380859375 
+[2025-03-25 14:59:50 root] (omniquant.py 274): INFO layer 5 iter 6 loss:0.01749456115067005 norm:nan max memory_allocated 14387.0380859375 
+[2025-03-25 15:00:03 root] (omniquant.py 274): INFO layer 5 iter 7 loss:0.01749456115067005 norm:nan max memory_allocated 14387.0380859375 
+[2025-03-25 15:00:16 root] (omniquant.py 274): INFO layer 5 iter 8 loss:0.01749456115067005 norm:nan max memory_allocated 14387.0380859375 
+[2025-03-25 15:00:28 root] (omniquant.py 274): INFO layer 5 iter 9 loss:0.01749456115067005 norm:nan max memory_allocated 14387.0380859375 
+[2025-03-25 15:00:31 root] (omniquant.py 193): INFO === Start quantize layer 6 ===
+[2025-03-25 15:00:46 root] (omniquant.py 274): INFO layer 6 iter 0 loss:0.019170844927430153 norm:nan max memory_allocated 14387.9052734375 
+[2025-03-25 15:00:59 root] (omniquant.py 274): INFO layer 6 iter 1 loss:0.019170844927430153 norm:nan max memory_allocated 14387.9052734375 
+[2025-03-25 15:01:11 root] (omniquant.py 274): INFO layer 6 iter 2 loss:0.019170844927430153 norm:nan max memory_allocated 14387.9052734375 
+[2025-03-25 15:01:24 root] (omniquant.py 274): INFO layer 6 iter 3 loss:0.019170844927430153 norm:nan max memory_allocated 14387.9052734375 
+[2025-03-25 15:01:37 root] (omniquant.py 274): INFO layer 6 iter 4 loss:0.019170844927430153 norm:nan max memory_allocated 14387.9052734375 
+[2025-03-25 15:01:49 root] (omniquant.py 274): INFO layer 6 iter 5 loss:0.019170844927430153 norm:nan max memory_allocated 14387.9052734375 
+[2025-03-25 15:02:02 root] (omniquant.py 274): INFO layer 6 iter 6 loss:0.019170844927430153 norm:nan max memory_allocated 14387.9052734375 
+[2025-03-25 15:02:15 root] (omniquant.py 274): INFO layer 6 iter 7 loss:0.019170844927430153 norm:nan max memory_allocated 14387.9052734375 
+[2025-03-25 15:02:27 root] (omniquant.py 274): INFO layer 6 iter 8 loss:0.019170844927430153 norm:nan max memory_allocated 14387.9052734375 
+[2025-03-25 15:02:40 root] (omniquant.py 274): INFO layer 6 iter 9 loss:0.019170844927430153 norm:nan max memory_allocated 14387.9052734375 
+[2025-03-25 15:02:42 root] (omniquant.py 193): INFO === Start quantize layer 7 ===
+[2025-03-25 15:02:58 root] (omniquant.py 274): INFO layer 7 iter 0 loss:0.021335525438189507 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:03:11 root] (omniquant.py 274): INFO layer 7 iter 1 loss:0.021335525438189507 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:03:23 root] (omniquant.py 274): INFO layer 7 iter 2 loss:0.021335525438189507 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:03:36 root] (omniquant.py 274): INFO layer 7 iter 3 loss:0.021335525438189507 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:03:48 root] (omniquant.py 274): INFO layer 7 iter 4 loss:0.021335525438189507 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:04:01 root] (omniquant.py 274): INFO layer 7 iter 5 loss:0.021335525438189507 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:04:14 root] (omniquant.py 274): INFO layer 7 iter 6 loss:0.021335525438189507 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:04:26 root] (omniquant.py 274): INFO layer 7 iter 7 loss:0.021335525438189507 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:04:39 root] (omniquant.py 274): INFO layer 7 iter 8 loss:0.021335525438189507 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:04:52 root] (omniquant.py 274): INFO layer 7 iter 9 loss:0.021335525438189507 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:04:54 root] (omniquant.py 193): INFO === Start quantize layer 8 ===
+[2025-03-25 15:05:10 root] (omniquant.py 274): INFO layer 8 iter 0 loss:0.023656560108065605 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:05:22 root] (omniquant.py 274): INFO layer 8 iter 1 loss:0.023656560108065605 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:05:35 root] (omniquant.py 274): INFO layer 8 iter 2 loss:0.023656560108065605 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:05:48 root] (omniquant.py 274): INFO layer 8 iter 3 loss:0.023656560108065605 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:06:00 root] (omniquant.py 274): INFO layer 8 iter 4 loss:0.023656560108065605 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:06:13 root] (omniquant.py 274): INFO layer 8 iter 5 loss:0.023656560108065605 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:06:26 root] (omniquant.py 274): INFO layer 8 iter 6 loss:0.023656560108065605 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:06:38 root] (omniquant.py 274): INFO layer 8 iter 7 loss:0.023656560108065605 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:06:51 root] (omniquant.py 274): INFO layer 8 iter 8 loss:0.023656560108065605 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:07:04 root] (omniquant.py 274): INFO layer 8 iter 9 loss:0.023656560108065605 norm:nan max memory_allocated 14389.7724609375 
+[2025-03-25 15:07:07 root] (omniquant.py 193): INFO === Start quantize layer 9 ===
+[2025-03-25 15:07:22 root] (omniquant.py 274): INFO layer 9 iter 0 loss:0.02695995755493641 norm:nan max memory_allocated 14390.5068359375 
+[2025-03-25 15:07:35 root] (omniquant.py 274): INFO layer 9 iter 1 loss:0.02695995755493641 norm:nan max memory_allocated 14390.5068359375 
+[2025-03-25 15:07:48 root] (omniquant.py 274): INFO layer 9 iter 2 loss:0.02695995755493641 norm:nan max memory_allocated 14390.5068359375 
+[2025-03-25 15:08:00 root] (omniquant.py 274): INFO layer 9 iter 3 loss:0.02695995755493641 norm:nan max memory_allocated 14390.5068359375 
+[2025-03-25 15:08:13 root] (omniquant.py 274): INFO layer 9 iter 4 loss:0.02695995755493641 norm:nan max memory_allocated 14390.5068359375 
+[2025-03-25 15:08:26 root] (omniquant.py 274): INFO layer 9 iter 5 loss:0.02695995755493641 norm:nan max memory_allocated 14390.5068359375 
+[2025-03-25 15:08:38 root] (omniquant.py 274): INFO layer 9 iter 6 loss:0.02695995755493641 norm:nan max memory_allocated 14390.5068359375 
+[2025-03-25 15:08:51 root] (omniquant.py 274): INFO layer 9 iter 7 loss:0.02695995755493641 norm:nan max memory_allocated 14390.5068359375 
+[2025-03-25 15:09:04 root] (omniquant.py 274): INFO layer 9 iter 8 loss:0.02695995755493641 norm:nan max memory_allocated 14390.5068359375 
+[2025-03-25 15:09:16 root] (omniquant.py 274): INFO layer 9 iter 9 loss:0.02695995755493641 norm:nan max memory_allocated 14390.5068359375 
+[2025-03-25 15:09:19 root] (omniquant.py 193): INFO === Start quantize layer 10 ===
+[2025-03-25 15:09:34 root] (omniquant.py 274): INFO layer 10 iter 0 loss:0.03030501864850521 norm:nan max memory_allocated 14391.3740234375 
+[2025-03-25 15:09:47 root] (omniquant.py 274): INFO layer 10 iter 1 loss:0.03030501864850521 norm:nan max memory_allocated 14391.3740234375 
+[2025-03-25 15:10:00 root] (omniquant.py 274): INFO layer 10 iter 2 loss:0.03030501864850521 norm:nan max memory_allocated 14391.3740234375 
+[2025-03-25 15:10:12 root] (omniquant.py 274): INFO layer 10 iter 3 loss:0.03030501864850521 norm:nan max memory_allocated 14391.3740234375 
+[2025-03-25 15:10:25 root] (omniquant.py 274): INFO layer 10 iter 4 loss:0.03030501864850521 norm:nan max memory_allocated 14391.3740234375 
+[2025-03-25 15:10:37 root] (omniquant.py 274): INFO layer 10 iter 5 loss:0.03030501864850521 norm:nan max memory_allocated 14391.3740234375 
+[2025-03-25 15:10:50 root] (omniquant.py 274): INFO layer 10 iter 6 loss:0.03030501864850521 norm:nan max memory_allocated 14391.3740234375 
+[2025-03-25 15:11:03 root] (omniquant.py 274): INFO layer 10 iter 7 loss:0.03030501864850521 norm:nan max memory_allocated 14391.3740234375 
+[2025-03-25 15:11:15 root] (omniquant.py 274): INFO layer 10 iter 8 loss:0.03030501864850521 norm:nan max memory_allocated 14391.3740234375 
+[2025-03-25 15:11:28 root] (omniquant.py 274): INFO layer 10 iter 9 loss:0.03030501864850521 norm:nan max memory_allocated 14391.3740234375 
+[2025-03-25 15:11:30 root] (omniquant.py 193): INFO === Start quantize layer 11 ===
+[2025-03-25 15:11:46 root] (omniquant.py 274): INFO layer 11 iter 0 loss:0.033844031393527985 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:11:58 root] (omniquant.py 274): INFO layer 11 iter 1 loss:0.033844031393527985 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:12:11 root] (omniquant.py 274): INFO layer 11 iter 2 loss:0.033844031393527985 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:12:24 root] (omniquant.py 274): INFO layer 11 iter 3 loss:0.033844031393527985 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:12:36 root] (omniquant.py 274): INFO layer 11 iter 4 loss:0.033844031393527985 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:12:49 root] (omniquant.py 274): INFO layer 11 iter 5 loss:0.033844031393527985 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:13:02 root] (omniquant.py 274): INFO layer 11 iter 6 loss:0.033844031393527985 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:13:14 root] (omniquant.py 274): INFO layer 11 iter 7 loss:0.033844031393527985 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:13:27 root] (omniquant.py 274): INFO layer 11 iter 8 loss:0.033844031393527985 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:13:39 root] (omniquant.py 274): INFO layer 11 iter 9 loss:0.033844031393527985 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:13:41 root] (omniquant.py 193): INFO === Start quantize layer 12 ===
+[2025-03-25 15:13:57 root] (omniquant.py 274): INFO layer 12 iter 0 loss:0.03702043741941452 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:14:10 root] (omniquant.py 274): INFO layer 12 iter 1 loss:0.03702043741941452 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:14:22 root] (omniquant.py 274): INFO layer 12 iter 2 loss:0.03702043741941452 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:14:35 root] (omniquant.py 274): INFO layer 12 iter 3 loss:0.03702043741941452 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:14:48 root] (omniquant.py 274): INFO layer 12 iter 4 loss:0.03702043741941452 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:15:00 root] (omniquant.py 274): INFO layer 12 iter 5 loss:0.03702043741941452 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:15:13 root] (omniquant.py 274): INFO layer 12 iter 6 loss:0.03702043741941452 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:15:25 root] (omniquant.py 274): INFO layer 12 iter 7 loss:0.03702043741941452 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:15:38 root] (omniquant.py 274): INFO layer 12 iter 8 loss:0.03702043741941452 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:15:50 root] (omniquant.py 274): INFO layer 12 iter 9 loss:0.03702043741941452 norm:nan max memory_allocated 14393.2412109375 
+[2025-03-25 15:15:53 root] (omniquant.py 193): INFO === Start quantize layer 13 ===
+[2025-03-25 15:16:08 root] (omniquant.py 274): INFO layer 13 iter 0 loss:0.04156250134110451 norm:nan max memory_allocated 14393.9755859375 
+[2025-03-25 15:16:21 root] (omniquant.py 274): INFO layer 13 iter 1 loss:0.04156250134110451 norm:nan max memory_allocated 14393.9755859375 
+[2025-03-25 15:16:34 root] (omniquant.py 274): INFO layer 13 iter 2 loss:0.04156250134110451 norm:nan max memory_allocated 14393.9755859375 
+[2025-03-25 15:16:46 root] (omniquant.py 274): INFO layer 13 iter 3 loss:0.04156250134110451 norm:nan max memory_allocated 14393.9755859375 
+[2025-03-25 15:16:59 root] (omniquant.py 274): INFO layer 13 iter 4 loss:0.04156250134110451 norm:nan max memory_allocated 14393.9755859375 
+[2025-03-25 15:17:12 root] (omniquant.py 274): INFO layer 13 iter 5 loss:0.04156250134110451 norm:nan max memory_allocated 14393.9755859375 
+[2025-03-25 15:17:24 root] (omniquant.py 274): INFO layer 13 iter 6 loss:0.04156250134110451 norm:nan max memory_allocated 14393.9755859375 
+[2025-03-25 15:17:37 root] (omniquant.py 274): INFO layer 13 iter 7 loss:0.04156250134110451 norm:nan max memory_allocated 14393.9755859375 
+[2025-03-25 15:17:50 root] (omniquant.py 274): INFO layer 13 iter 8 loss:0.04156250134110451 norm:nan max memory_allocated 14393.9755859375 
+[2025-03-25 15:18:02 root] (omniquant.py 274): INFO layer 13 iter 9 loss:0.04156250134110451 norm:nan max memory_allocated 14393.9755859375 
+[2025-03-25 15:18:05 root] (omniquant.py 193): INFO === Start quantize layer 14 ===
+[2025-03-25 15:18:20 root] (omniquant.py 274): INFO layer 14 iter 0 loss:0.045532986521720886 norm:nan max memory_allocated 14394.8427734375 
+[2025-03-25 15:18:33 root] (omniquant.py 274): INFO layer 14 iter 1 loss:0.045532986521720886 norm:nan max memory_allocated 14394.8427734375 
+[2025-03-25 15:18:46 root] (omniquant.py 274): INFO layer 14 iter 2 loss:0.045532986521720886 norm:nan max memory_allocated 14394.8427734375 
+[2025-03-25 15:18:58 root] (omniquant.py 274): INFO layer 14 iter 3 loss:0.045532986521720886 norm:nan max memory_allocated 14394.8427734375 
+[2025-03-25 15:19:11 root] (omniquant.py 274): INFO layer 14 iter 4 loss:0.045532986521720886 norm:nan max memory_allocated 14394.8427734375 
+[2025-03-25 15:19:24 root] (omniquant.py 274): INFO layer 14 iter 5 loss:0.045532986521720886 norm:nan max memory_allocated 14394.8427734375 
+[2025-03-25 15:19:37 root] (omniquant.py 274): INFO layer 14 iter 6 loss:0.045532986521720886 norm:nan max memory_allocated 14394.8427734375 
+[2025-03-25 15:19:49 root] (omniquant.py 274): INFO layer 14 iter 7 loss:0.045532986521720886 norm:nan max memory_allocated 14394.8427734375 
+[2025-03-25 15:20:02 root] (omniquant.py 274): INFO layer 14 iter 8 loss:0.045532986521720886 norm:nan max memory_allocated 14394.8427734375 
+[2025-03-25 15:20:15 root] (omniquant.py 274): INFO layer 14 iter 9 loss:0.045532986521720886 norm:nan max memory_allocated 14394.8427734375 
+[2025-03-25 15:20:17 root] (omniquant.py 193): INFO === Start quantize layer 15 ===
+[2025-03-25 15:20:33 root] (omniquant.py 274): INFO layer 15 iter 0 loss:0.05225740000605583 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:20:45 root] (omniquant.py 274): INFO layer 15 iter 1 loss:0.05225740000605583 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:20:58 root] (omniquant.py 274): INFO layer 15 iter 2 loss:0.05225740000605583 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:21:11 root] (omniquant.py 274): INFO layer 15 iter 3 loss:0.05225740000605583 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:21:23 root] (omniquant.py 274): INFO layer 15 iter 4 loss:0.05225740000605583 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:21:36 root] (omniquant.py 274): INFO layer 15 iter 5 loss:0.05225740000605583 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:21:49 root] (omniquant.py 274): INFO layer 15 iter 6 loss:0.05225740000605583 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:22:01 root] (omniquant.py 274): INFO layer 15 iter 7 loss:0.05225740000605583 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:22:14 root] (omniquant.py 274): INFO layer 15 iter 8 loss:0.05225740000605583 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:22:26 root] (omniquant.py 274): INFO layer 15 iter 9 loss:0.05225740000605583 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:22:28 root] (omniquant.py 193): INFO === Start quantize layer 16 ===
+[2025-03-25 15:22:44 root] (omniquant.py 274): INFO layer 16 iter 0 loss:0.06337448209524155 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:22:56 root] (omniquant.py 274): INFO layer 16 iter 1 loss:0.06337448209524155 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:23:09 root] (omniquant.py 274): INFO layer 16 iter 2 loss:0.06337448209524155 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:23:22 root] (omniquant.py 274): INFO layer 16 iter 3 loss:0.06337448209524155 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:23:34 root] (omniquant.py 274): INFO layer 16 iter 4 loss:0.06337448209524155 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:23:47 root] (omniquant.py 274): INFO layer 16 iter 5 loss:0.06337448209524155 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:24:00 root] (omniquant.py 274): INFO layer 16 iter 6 loss:0.06337448209524155 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:24:13 root] (omniquant.py 274): INFO layer 16 iter 7 loss:0.06337448209524155 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:24:25 root] (omniquant.py 274): INFO layer 16 iter 8 loss:0.06337448209524155 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:24:38 root] (omniquant.py 274): INFO layer 16 iter 9 loss:0.06337448209524155 norm:nan max memory_allocated 14396.7099609375 
+[2025-03-25 15:24:40 root] (omniquant.py 193): INFO === Start quantize layer 17 ===
+[2025-03-25 15:24:56 root] (omniquant.py 274): INFO layer 17 iter 0 loss:0.07029735296964645 norm:nan max memory_allocated 14397.4443359375 
+[2025-03-25 15:25:08 root] (omniquant.py 274): INFO layer 17 iter 1 loss:0.07029735296964645 norm:nan max memory_allocated 14397.4443359375 
+[2025-03-25 15:25:21 root] (omniquant.py 274): INFO layer 17 iter 2 loss:0.07029735296964645 norm:nan max memory_allocated 14397.4443359375 
+[2025-03-25 15:25:33 root] (omniquant.py 274): INFO layer 17 iter 3 loss:0.07029735296964645 norm:nan max memory_allocated 14397.4443359375 
+[2025-03-25 15:25:46 root] (omniquant.py 274): INFO layer 17 iter 4 loss:0.07029735296964645 norm:nan max memory_allocated 14397.4443359375 
+[2025-03-25 15:25:58 root] (omniquant.py 274): INFO layer 17 iter 5 loss:0.07029735296964645 norm:nan max memory_allocated 14397.4443359375 
+[2025-03-25 15:26:11 root] (omniquant.py 274): INFO layer 17 iter 6 loss:0.07029735296964645 norm:nan max memory_allocated 14397.4443359375 
+[2025-03-25 15:26:24 root] (omniquant.py 274): INFO layer 17 iter 7 loss:0.07029735296964645 norm:nan max memory_allocated 14397.4443359375 
+[2025-03-25 15:26:36 root] (omniquant.py 274): INFO layer 17 iter 8 loss:0.07029735296964645 norm:nan max memory_allocated 14397.4443359375 
+[2025-03-25 15:26:49 root] (omniquant.py 274): INFO layer 17 iter 9 loss:0.07029735296964645 norm:nan max memory_allocated 14397.4443359375 
+[2025-03-25 15:26:51 root] (omniquant.py 193): INFO === Start quantize layer 18 ===
+[2025-03-25 15:27:07 root] (omniquant.py 274): INFO layer 18 iter 0 loss:0.08488446474075317 norm:nan max memory_allocated 14398.3115234375 
+[2025-03-25 15:27:20 root] (omniquant.py 274): INFO layer 18 iter 1 loss:0.08488446474075317 norm:nan max memory_allocated 14398.3115234375 
+[2025-03-25 15:27:32 root] (omniquant.py 274): INFO layer 18 iter 2 loss:0.08488446474075317 norm:nan max memory_allocated 14398.3115234375 
+[2025-03-25 15:27:45 root] (omniquant.py 274): INFO layer 18 iter 3 loss:0.08488446474075317 norm:nan max memory_allocated 14398.3115234375 
+[2025-03-25 15:27:58 root] (omniquant.py 274): INFO layer 18 iter 4 loss:0.08488446474075317 norm:nan max memory_allocated 14398.3115234375 
+[2025-03-25 15:28:10 root] (omniquant.py 274): INFO layer 18 iter 5 loss:0.08488446474075317 norm:nan max memory_allocated 14398.3115234375 
+[2025-03-25 15:28:23 root] (omniquant.py 274): INFO layer 18 iter 6 loss:0.08488446474075317 norm:nan max memory_allocated 14398.3115234375 
+[2025-03-25 15:28:36 root] (omniquant.py 274): INFO layer 18 iter 7 loss:0.08488446474075317 norm:nan max memory_allocated 14398.3115234375 
+[2025-03-25 15:28:48 root] (omniquant.py 274): INFO layer 18 iter 8 loss:0.08488446474075317 norm:nan max memory_allocated 14398.3115234375 
+[2025-03-25 15:29:01 root] (omniquant.py 274): INFO layer 18 iter 9 loss:0.08488446474075317 norm:nan max memory_allocated 14398.3115234375 
+[2025-03-25 15:29:03 root] (omniquant.py 193): INFO === Start quantize layer 19 ===
+[2025-03-25 15:29:19 root] (omniquant.py 274): INFO layer 19 iter 0 loss:0.10146444290876389 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:29:32 root] (omniquant.py 274): INFO layer 19 iter 1 loss:0.10146444290876389 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:29:45 root] (omniquant.py 274): INFO layer 19 iter 2 loss:0.10146444290876389 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:29:57 root] (omniquant.py 274): INFO layer 19 iter 3 loss:0.10146444290876389 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:30:10 root] (omniquant.py 274): INFO layer 19 iter 4 loss:0.10146444290876389 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:30:23 root] (omniquant.py 274): INFO layer 19 iter 5 loss:0.10146444290876389 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:30:35 root] (omniquant.py 274): INFO layer 19 iter 6 loss:0.10146444290876389 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:30:48 root] (omniquant.py 274): INFO layer 19 iter 7 loss:0.10146444290876389 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:31:01 root] (omniquant.py 274): INFO layer 19 iter 8 loss:0.10146444290876389 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:31:13 root] (omniquant.py 274): INFO layer 19 iter 9 loss:0.10146444290876389 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:31:15 root] (omniquant.py 193): INFO === Start quantize layer 20 ===
+[2025-03-25 15:31:31 root] (omniquant.py 274): INFO layer 20 iter 0 loss:0.12174253165721893 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:31:43 root] (omniquant.py 274): INFO layer 20 iter 1 loss:0.12174253165721893 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:31:56 root] (omniquant.py 274): INFO layer 20 iter 2 loss:0.12174253165721893 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:32:08 root] (omniquant.py 274): INFO layer 20 iter 3 loss:0.12174253165721893 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:32:21 root] (omniquant.py 274): INFO layer 20 iter 4 loss:0.12174253165721893 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:32:34 root] (omniquant.py 274): INFO layer 20 iter 5 loss:0.12174253165721893 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:32:46 root] (omniquant.py 274): INFO layer 20 iter 6 loss:0.12174253165721893 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:32:59 root] (omniquant.py 274): INFO layer 20 iter 7 loss:0.12174253165721893 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:33:12 root] (omniquant.py 274): INFO layer 20 iter 8 loss:0.12174253165721893 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:33:24 root] (omniquant.py 274): INFO layer 20 iter 9 loss:0.12174253165721893 norm:nan max memory_allocated 14400.1787109375 
+[2025-03-25 15:33:27 root] (omniquant.py 193): INFO === Start quantize layer 21 ===
+[2025-03-25 15:33:42 root] (omniquant.py 274): INFO layer 21 iter 0 loss:0.14228300750255585 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:33:55 root] (omniquant.py 274): INFO layer 21 iter 1 loss:0.14228300750255585 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:34:08 root] (omniquant.py 274): INFO layer 21 iter 2 loss:0.14228300750255585 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:34:20 root] (omniquant.py 274): INFO layer 21 iter 3 loss:0.14228300750255585 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:34:33 root] (omniquant.py 274): INFO layer 21 iter 4 loss:0.14228300750255585 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:34:46 root] (omniquant.py 274): INFO layer 21 iter 5 loss:0.14228300750255585 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:34:58 root] (omniquant.py 274): INFO layer 21 iter 6 loss:0.14228300750255585 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:35:11 root] (omniquant.py 274): INFO layer 21 iter 7 loss:0.14228300750255585 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:35:24 root] (omniquant.py 274): INFO layer 21 iter 8 loss:0.14228300750255585 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:35:36 root] (omniquant.py 274): INFO layer 21 iter 9 loss:0.14228300750255585 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:35:38 root] (omniquant.py 193): INFO === Start quantize layer 22 ===
+[2025-03-25 15:35:54 root] (omniquant.py 274): INFO layer 22 iter 0 loss:0.17155873775482178 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:36:06 root] (omniquant.py 274): INFO layer 22 iter 1 loss:0.17155873775482178 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:36:19 root] (omniquant.py 274): INFO layer 22 iter 2 loss:0.17155873775482178 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:36:31 root] (omniquant.py 274): INFO layer 22 iter 3 loss:0.17155873775482178 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:36:44 root] (omniquant.py 274): INFO layer 22 iter 4 loss:0.17155873775482178 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:36:57 root] (omniquant.py 274): INFO layer 22 iter 5 loss:0.17155873775482178 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:37:10 root] (omniquant.py 274): INFO layer 22 iter 6 loss:0.17155873775482178 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:37:22 root] (omniquant.py 274): INFO layer 22 iter 7 loss:0.17155873775482178 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:37:35 root] (omniquant.py 274): INFO layer 22 iter 8 loss:0.17155873775482178 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:37:48 root] (omniquant.py 274): INFO layer 22 iter 9 loss:0.17155873775482178 norm:nan max memory_allocated 14400.9130859375 
+[2025-03-25 15:37:50 root] (omniquant.py 193): INFO === Start quantize layer 23 ===
+[2025-03-25 15:38:05 root] (omniquant.py 274): INFO layer 23 iter 0 loss:0.20080789923667908 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:38:18 root] (omniquant.py 274): INFO layer 23 iter 1 loss:0.20080789923667908 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:38:31 root] (omniquant.py 274): INFO layer 23 iter 2 loss:0.20080789923667908 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:38:43 root] (omniquant.py 274): INFO layer 23 iter 3 loss:0.20080789923667908 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:38:56 root] (omniquant.py 274): INFO layer 23 iter 4 loss:0.20080789923667908 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:39:09 root] (omniquant.py 274): INFO layer 23 iter 5 loss:0.20080789923667908 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:39:21 root] (omniquant.py 274): INFO layer 23 iter 6 loss:0.20080789923667908 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:39:34 root] (omniquant.py 274): INFO layer 23 iter 7 loss:0.20080789923667908 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:39:47 root] (omniquant.py 274): INFO layer 23 iter 8 loss:0.20080789923667908 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:39:59 root] (omniquant.py 274): INFO layer 23 iter 9 loss:0.20080789923667908 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:40:01 root] (omniquant.py 193): INFO === Start quantize layer 24 ===
+[2025-03-25 15:40:17 root] (omniquant.py 274): INFO layer 24 iter 0 loss:0.23892545700073242 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:40:29 root] (omniquant.py 274): INFO layer 24 iter 1 loss:0.23892545700073242 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:40:42 root] (omniquant.py 274): INFO layer 24 iter 2 loss:0.23892545700073242 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:40:55 root] (omniquant.py 274): INFO layer 24 iter 3 loss:0.23892545700073242 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:41:07 root] (omniquant.py 274): INFO layer 24 iter 4 loss:0.23892545700073242 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:41:20 root] (omniquant.py 274): INFO layer 24 iter 5 loss:0.23892545700073242 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:41:33 root] (omniquant.py 274): INFO layer 24 iter 6 loss:0.23892545700073242 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:41:45 root] (omniquant.py 274): INFO layer 24 iter 7 loss:0.23892545700073242 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:41:58 root] (omniquant.py 274): INFO layer 24 iter 8 loss:0.23892545700073242 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:42:11 root] (omniquant.py 274): INFO layer 24 iter 9 loss:0.23892545700073242 norm:nan max memory_allocated 14403.6474609375 
+[2025-03-25 15:42:13 root] (omniquant.py 193): INFO === Start quantize layer 25 ===
+[2025-03-25 15:42:29 root] (omniquant.py 274): INFO layer 25 iter 0 loss:0.28065046668052673 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:42:41 root] (omniquant.py 274): INFO layer 25 iter 1 loss:0.28065046668052673 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:42:54 root] (omniquant.py 274): INFO layer 25 iter 2 loss:0.28065046668052673 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:43:07 root] (omniquant.py 274): INFO layer 25 iter 3 loss:0.28065046668052673 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:43:19 root] (omniquant.py 274): INFO layer 25 iter 4 loss:0.28065046668052673 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:43:32 root] (omniquant.py 274): INFO layer 25 iter 5 loss:0.28065046668052673 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:43:45 root] (omniquant.py 274): INFO layer 25 iter 6 loss:0.28065046668052673 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:43:57 root] (omniquant.py 274): INFO layer 25 iter 7 loss:0.28065046668052673 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:44:10 root] (omniquant.py 274): INFO layer 25 iter 8 loss:0.28065046668052673 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:44:23 root] (omniquant.py 274): INFO layer 25 iter 9 loss:0.28065046668052673 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:44:25 root] (omniquant.py 193): INFO === Start quantize layer 26 ===
+[2025-03-25 15:44:40 root] (omniquant.py 274): INFO layer 26 iter 0 loss:0.33278441429138184 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:44:53 root] (omniquant.py 274): INFO layer 26 iter 1 loss:0.33278441429138184 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:45:06 root] (omniquant.py 274): INFO layer 26 iter 2 loss:0.33278441429138184 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:45:18 root] (omniquant.py 274): INFO layer 26 iter 3 loss:0.33278441429138184 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:45:31 root] (omniquant.py 274): INFO layer 26 iter 4 loss:0.33278441429138184 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:45:44 root] (omniquant.py 274): INFO layer 26 iter 5 loss:0.33278441429138184 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:45:57 root] (omniquant.py 274): INFO layer 26 iter 6 loss:0.33278441429138184 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:46:09 root] (omniquant.py 274): INFO layer 26 iter 7 loss:0.33278441429138184 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:46:22 root] (omniquant.py 274): INFO layer 26 iter 8 loss:0.33278441429138184 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:46:35 root] (omniquant.py 274): INFO layer 26 iter 9 loss:0.33278441429138184 norm:nan max memory_allocated 14404.3818359375 
+[2025-03-25 15:46:37 root] (omniquant.py 193): INFO === Start quantize layer 27 ===
+[2025-03-25 15:46:52 root] (omniquant.py 274): INFO layer 27 iter 0 loss:0.3912109434604645 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:47:05 root] (omniquant.py 274): INFO layer 27 iter 1 loss:0.3912109434604645 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:47:18 root] (omniquant.py 274): INFO layer 27 iter 2 loss:0.3912109434604645 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:47:30 root] (omniquant.py 274): INFO layer 27 iter 3 loss:0.3912109434604645 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:47:43 root] (omniquant.py 274): INFO layer 27 iter 4 loss:0.3912109434604645 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:47:56 root] (omniquant.py 274): INFO layer 27 iter 5 loss:0.3912109434604645 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:48:09 root] (omniquant.py 274): INFO layer 27 iter 6 loss:0.3912109434604645 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:48:21 root] (omniquant.py 274): INFO layer 27 iter 7 loss:0.3912109434604645 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:48:34 root] (omniquant.py 274): INFO layer 27 iter 8 loss:0.3912109434604645 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:48:46 root] (omniquant.py 274): INFO layer 27 iter 9 loss:0.3912109434604645 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:48:49 root] (omniquant.py 193): INFO === Start quantize layer 28 ===
+[2025-03-25 15:49:04 root] (omniquant.py 274): INFO layer 28 iter 0 loss:0.4711828827857971 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:49:17 root] (omniquant.py 274): INFO layer 28 iter 1 loss:0.4711828827857971 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:49:29 root] (omniquant.py 274): INFO layer 28 iter 2 loss:0.4711828827857971 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:49:42 root] (omniquant.py 274): INFO layer 28 iter 3 loss:0.4711828827857971 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:49:54 root] (omniquant.py 274): INFO layer 28 iter 4 loss:0.4711828827857971 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:50:07 root] (omniquant.py 274): INFO layer 28 iter 5 loss:0.4711828827857971 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:50:20 root] (omniquant.py 274): INFO layer 28 iter 6 loss:0.4711828827857971 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:50:32 root] (omniquant.py 274): INFO layer 28 iter 7 loss:0.4711828827857971 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:50:45 root] (omniquant.py 274): INFO layer 28 iter 8 loss:0.4711828827857971 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:50:58 root] (omniquant.py 274): INFO layer 28 iter 9 loss:0.4711828827857971 norm:nan max memory_allocated 14407.1162109375 
+[2025-03-25 15:51:00 root] (omniquant.py 193): INFO === Start quantize layer 29 ===
+[2025-03-25 15:51:16 root] (omniquant.py 274): INFO layer 29 iter 0 loss:0.5785995721817017 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:51:28 root] (omniquant.py 274): INFO layer 29 iter 1 loss:0.5785995721817017 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:51:41 root] (omniquant.py 274): INFO layer 29 iter 2 loss:0.5785995721817017 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:51:53 root] (omniquant.py 274): INFO layer 29 iter 3 loss:0.5785995721817017 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:52:06 root] (omniquant.py 274): INFO layer 29 iter 4 loss:0.5785995721817017 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:52:18 root] (omniquant.py 274): INFO layer 29 iter 5 loss:0.5785995721817017 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:52:31 root] (omniquant.py 274): INFO layer 29 iter 6 loss:0.5785995721817017 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:52:44 root] (omniquant.py 274): INFO layer 29 iter 7 loss:0.5785995721817017 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:52:56 root] (omniquant.py 274): INFO layer 29 iter 8 loss:0.5785995721817017 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:53:09 root] (omniquant.py 274): INFO layer 29 iter 9 loss:0.5785995721817017 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:53:11 root] (omniquant.py 193): INFO === Start quantize layer 30 ===
+[2025-03-25 15:53:27 root] (omniquant.py 274): INFO layer 30 iter 0 loss:1.3038339614868164 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:53:40 root] (omniquant.py 274): INFO layer 30 iter 1 loss:1.3038339614868164 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:53:52 root] (omniquant.py 274): INFO layer 30 iter 2 loss:1.3038339614868164 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:54:05 root] (omniquant.py 274): INFO layer 30 iter 3 loss:1.3038339614868164 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:54:18 root] (omniquant.py 274): INFO layer 30 iter 4 loss:1.3038339614868164 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:54:30 root] (omniquant.py 274): INFO layer 30 iter 5 loss:1.3038339614868164 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:54:43 root] (omniquant.py 274): INFO layer 30 iter 6 loss:1.3038339614868164 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:54:55 root] (omniquant.py 274): INFO layer 30 iter 7 loss:1.3038339614868164 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:55:08 root] (omniquant.py 274): INFO layer 30 iter 8 loss:1.3038339614868164 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:55:21 root] (omniquant.py 274): INFO layer 30 iter 9 loss:1.3038339614868164 norm:nan max memory_allocated 14407.8505859375 
+[2025-03-25 15:55:23 root] (omniquant.py 193): INFO === Start quantize layer 31 ===
+[2025-03-25 15:55:38 root] (omniquant.py 274): INFO layer 31 iter 0 loss:1.7684543132781982 norm:nan max memory_allocated 14410.5849609375 
+[2025-03-25 15:55:51 root] (omniquant.py 274): INFO layer 31 iter 1 loss:1.7684543132781982 norm:nan max memory_allocated 14410.5849609375 
+[2025-03-25 15:56:04 root] (omniquant.py 274): INFO layer 31 iter 2 loss:1.7684543132781982 norm:nan max memory_allocated 14410.5849609375 
+[2025-03-25 15:56:16 root] (omniquant.py 274): INFO layer 31 iter 3 loss:1.7684543132781982 norm:nan max memory_allocated 14410.5849609375 
+[2025-03-25 15:56:29 root] (omniquant.py 274): INFO layer 31 iter 4 loss:1.7684543132781982 norm:nan max memory_allocated 14410.5849609375 
+[2025-03-25 15:56:42 root] (omniquant.py 274): INFO layer 31 iter 5 loss:1.7684543132781982 norm:nan max memory_allocated 14410.5849609375 
+[2025-03-25 15:56:54 root] (omniquant.py 274): INFO layer 31 iter 6 loss:1.7684543132781982 norm:nan max memory_allocated 14410.5849609375 
+[2025-03-25 15:57:07 root] (omniquant.py 274): INFO layer 31 iter 7 loss:1.7684543132781982 norm:nan max memory_allocated 14410.5849609375 
+[2025-03-25 15:57:20 root] (omniquant.py 274): INFO layer 31 iter 8 loss:1.7684543132781982 norm:nan max memory_allocated 14410.5849609375 
+[2025-03-25 15:57:32 root] (omniquant.py 274): INFO layer 31 iter 9 loss:1.7684543132781982 norm:nan max memory_allocated 14410.5849609375 
+[2025-03-25 15:57:34 root] (main.py 353): INFO 4312.859142065048
+[2025-03-25 16:00:16 root] (main.py 144): INFO wikitext2 : 6.535411834716797
+[2025-03-25 16:03:15 root] (main.py 144): INFO c4 : 8.237279891967773
+[2025-03-25 18:10:02 root] (main.py 155): INFO {'wikitext2': 6.535411834716797, 'c4': 8.237279891967773, 'results': {'piqa': {'acc': 0.763873775843308, 'acc_stderr': 0.00990896589055821, 'acc_norm': 0.7568008705114254, 'acc_norm_stderr': 0.010009611953858924}, 'arc_challenge': {'acc': 0.38993174061433444, 'acc_stderr': 0.014252959848892886, 'acc_norm': 0.3916382252559727, 'acc_norm_stderr': 0.014264122124938213}, 'winogrande': {'acc': np.float64(0.654301499605367), 'acc_stderr': 0.013366596951934375}, 'hellaswag': {'acc': 0.544214299940251, 'acc_stderr': 0.004970234032728302, 'acc_norm': 0.7105158334993029, 'acc_norm_stderr': 0.004525960965551705}, 'boolq': {'acc': 0.6223241590214067, 'acc_stderr': 0.008479309208281648}, 'arc_easy': {'acc': 0.6679292929292929, 'acc_stderr': 0.009663817543072701, 'acc_norm': 0.5328282828282829, 'acc_norm_stderr': 0.010237645778853856}}, 'versions': {'piqa': 0, 'arc_challenge': 0, 'winogrande': 0, 'hellaswag': 0, 'boolq': 1, 'arc_easy': 0}, 'config': {'model': <models.LMClass.LMClass object at 0x7fdafeab2890>, 'model_args': None, 'num_fewshot': 0, 'limit': None, 'bootstrap_iters': 100000, 'description_dict': None}}

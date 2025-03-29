@@ -1,0 +1,79 @@
+nohup: ignoring input
+/opt/conda/lib/python3.11/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/conda/lib/python3.11/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/opt/conda/lib/python3.11/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/workspace/AutoGPTQ-bugfix/auto_gptq/nn_modules/triton_utils/kernels.py:357: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/workspace/AutoGPTQ-bugfix/auto_gptq/nn_modules/triton_utils/kernels.py:365: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/workspace/AutoGPTQ-bugfix/auto_gptq/nn_modules/triton_utils/kernels.py:397: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.float16)
+['main.py', '--model', '/workspace/volume/inference-soft-data/AE/llm/models/llama-13b-hf', '--eval_ppl', '--epochs', '10', '--output_dir', './log/llama-13b-w4a6', '--wbits', '4', '--abits', '6', '--lwc', '--let', '--aug_loss', '--tasks', 'piqa,arc_easy,arc_challenge,boolq,hellaswag,winogrande']
+[2025-03-25 14:43:53 root](main.py 258): INFO Namespace(model='/workspace/volume/inference-soft-data/AE/llm/models/llama-13b-hf', cache_dir='./cache', output_dir='./log/llama-13b-w4a6', save_dir=None, resume=None, real_quant=False, calib_dataset='wikitext2', nsamples=128, batch_size=1, seed=2, tasks='piqa,arc_easy,arc_challenge,boolq,hellaswag,winogrande', eval_ppl=True, num_fewshot=0, wbits=4, abits=6, group_size=None, alpha=0.5, let_lr=0.005, lwc_lr=0.01, wd=0, epochs=10, let=True, lwc=True, aug_loss=True, symmetric=False, disable_zero_point=False, a_dynamic_method='per_token', w_dynamic_method='per_channel', limit=-1, multigpu=False, deactive_amp=False, attn_implementation='eager', net=None, act_scales=None, act_shifts=None)
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py:484: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(checkpoint_file, map_location=map_location)
+Loading checkpoint shards:  33%|███▎      | 1/3 [03:03<06:07, 183.74s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [05:34<02:44, 164.14s/it]Loading checkpoint shards: 100%|██████████| 3/3 [07:13<00:00, 134.58s/it]Loading checkpoint shards: 100%|██████████| 3/3 [07:13<00:00, 144.52s/it]
+vocab size:  32000
+[2025-03-25 14:51:07 root](main.py 324): INFO === start quantization ===
+/workspace/volume/yangzhe/OmniQuant/main.py:329: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  dataloader = torch.load(cache_dataloader)
+[2025-03-25 14:51:07 root](main.py 330): INFO load calibration from ./cache/dataloader_llama_wikitext2_128.cache
+/workspace/volume/yangzhe/OmniQuant/main.py:343: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  act_scales = torch.load(args.act_scales)
+/workspace/volume/yangzhe/OmniQuant/main.py:344: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  act_shifts = torch.load(args.act_shifts)
+[2025-03-25 14:51:07 root](omniquant.py 50): INFO Starting ...
+[2025-03-25 14:51:09 root](omniquant.py 193): INFO === Start quantize layer 0 ===
+/workspace/volume/yangzhe/OmniQuant/quantize/omniquant.py:211: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+/workspace/volume/yangzhe/OmniQuant/utils.py:31: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self._scaler = torch.cuda.amp.GradScaler()
+/workspace/volume/yangzhe/OmniQuant/quantize/omniquant.py:257: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with traincast():
+[2025-03-25 14:51:31 root](omniquant.py 274): INFO layer 0 iter 0 loss:0.0003777627134695649 norm:nan max memory_allocated 19631.7880859375 
+[2025-03-25 14:51:48 root](omniquant.py 274): INFO layer 0 iter 1 loss:0.0003777627134695649 norm:nan max memory_allocated 19631.7880859375 
+[2025-03-25 14:52:06 root](omniquant.py 274): INFO layer 0 iter 2 loss:0.0003777627134695649 norm:nan max memory_allocated 19631.7880859375 
+[2025-03-25 14:52:23 root](omniquant.py 274): INFO layer 0 iter 3 loss:0.0003777627134695649 norm:nan max memory_allocated 19631.7880859375 
+[2025-03-25 14:52:41 root](omniquant.py 274): INFO layer 0 iter 4 loss:0.0003777627134695649 norm:nan max memory_allocated 19631.7880859375 
+[2025-03-25 14:52:58 root](omniquant.py 274): INFO layer 0 iter 5 loss:0.0003777627134695649 norm:nan max memory_allocated 19631.7880859375 
+[2025-03-25 14:53:16 root](omniquant.py 274): INFO layer 0 iter 6 loss:0.0003777627134695649 norm:nan max memory_allocated 19631.7880859375 
+[2025-03-25 14:53:34 root](omniquant.py 274): INFO layer 0 iter 7 loss:0.0003777627134695649 norm:nan max memory_allocated 19631.7880859375 
+[2025-03-25 14:53:51 root](omniquant.py 274): INFO layer 0 iter 8 loss:0.0003777627134695649 norm:nan max memory_allocated 19631.7880859375 
+[2025-03-25 14:54:09 root](omniquant.py 274): INFO layer 0 iter 9 loss:0.0003777627134695649 norm:nan max memory_allocated 19631.7880859375 
+/workspace/volume/yangzhe/OmniQuant/quantize/omniquant.py:284: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with traincast():
+[2025-03-25 14:54:13 root](omniquant.py 193): INFO === Start quantize layer 1 ===
+/workspace/volume/yangzhe/OmniQuant/quantize/omniquant.py:211: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[2025-03-25 14:54:34 root](omniquant.py 274): INFO layer 1 iter 0 loss:0.0009573408169671893 norm:nan max memory_allocated 19631.8271484375 
+[2025-03-25 14:54:52 root](omniquant.py 274): INFO layer 1 iter 1 loss:0.0008675250574015081 norm:nan max memory_allocated 19631.8271484375 
+[2025-03-25 14:55:10 root](omniquant.py 274): INFO layer 1 iter 2 loss:0.0008674904238432646 norm:nan max memory_allocated 19631.8271484375 
+[2025-03-25 14:55:10 root](omniquant.py 264): INFO Loss is NAN, stopping training
+> /workspace/volume/yangzhe/OmniQuant/quantize/omniquant.py(267)omniquant()
+-> loss_list.append(loss.detach().cpu())
+(Pdb) Traceback (most recent call last):
+  File "/workspace/volume/yangzhe/OmniQuant/main.py", line 375, in <module>
+    main()
+  File "/workspace/volume/yangzhe/OmniQuant/main.py", line 345, in main
+    omniquant(
+  File "/workspace/volume/yangzhe/OmniQuant/quantize/omniquant.py", line 267, in omniquant
+    loss_list.append(loss.detach().cpu())
+    ^^^^^^^^^
+  File "/opt/conda/lib/python3.11/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/bdb.py", line 114, in dispatch_line
+    self.user_line(frame)
+  File "/opt/conda/lib/python3.11/pdb.py", line 325, in user_line
+    self.interaction(frame, None)
+  File "/opt/conda/lib/python3.11/pdb.py", line 419, in interaction
+    self._cmdloop()
+  File "/opt/conda/lib/python3.11/pdb.py", line 385, in _cmdloop
+    self.cmdloop()
+  File "/opt/conda/lib/python3.11/cmd.py", line 126, in cmdloop
+    line = input(self.prompt)
+           ^^^^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor

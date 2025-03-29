@@ -1,0 +1,445 @@
+[2025-03-26 12:21:28 root] (main.py 258): INFO Namespace(model='/workspace/volume/inference-soft-data/AE/llm/models/Llama-2-13b-hf', cache_dir='./cache', output_dir='./log/Llama-2-13b-w4a6', save_dir=None, resume=None, real_quant=False, calib_dataset='wikitext2', nsamples=128, batch_size=1, seed=2, tasks='piqa,arc_easy,arc_challenge,boolq,hellaswag,winogrande', eval_ppl=True, num_fewshot=0, wbits=4, abits=6, group_size=None, alpha=0.5, let_lr=0.005, lwc_lr=0.01, wd=0, epochs=10, let=True, lwc=True, aug_loss=True, symmetric=False, disable_zero_point=False, a_dynamic_method='per_token', w_dynamic_method='per_channel', limit=-1, multigpu=False, deactive_amp=True, attn_implementation='eager', net=None, act_scales=None, act_shifts=None)
+[2025-03-26 12:21:29 root] (main.py 324): INFO === start quantization ===
+[2025-03-26 12:21:29 root] (main.py 330): INFO load calibration from ./cache/dataloader_Llama_wikitext2_128.cache
+[2025-03-26 12:21:29 root] (omniquant.py 50): INFO Starting ...
+[2025-03-26 12:21:30 root] (omniquant.py 193): INFO === Start quantize layer 0 ===
+[2025-03-26 12:22:22 root] (omniquant.py 289): INFO layer 0 iter 0 loss:5.7047716836677864e-05 norm:1.699199856375344e-05 max memory_allocated 27127.5244140625 
+[2025-03-26 12:23:09 root] (omniquant.py 289): INFO layer 0 iter 1 loss:4.195304791210219e-05 norm:8.371453077415936e-06 max memory_allocated 27127.5244140625 
+[2025-03-26 12:23:57 root] (omniquant.py 289): INFO layer 0 iter 2 loss:3.8585130823776126e-05 norm:9.367684469907545e-06 max memory_allocated 27127.5244140625 
+[2025-03-26 12:24:45 root] (omniquant.py 289): INFO layer 0 iter 3 loss:3.7234633055049926e-05 norm:1.0408248272142373e-05 max memory_allocated 27127.5244140625 
+[2025-03-26 12:25:33 root] (omniquant.py 289): INFO layer 0 iter 4 loss:3.551991540007293e-05 norm:1.087247710529482e-05 max memory_allocated 27127.5244140625 
+[2025-03-26 12:26:21 root] (omniquant.py 289): INFO layer 0 iter 5 loss:3.455507248872891e-05 norm:9.456421139475424e-06 max memory_allocated 27127.5244140625 
+[2025-03-26 12:27:09 root] (omniquant.py 289): INFO layer 0 iter 6 loss:3.3535081456648186e-05 norm:8.314239494211506e-06 max memory_allocated 27127.5244140625 
+[2025-03-26 12:27:58 root] (omniquant.py 289): INFO layer 0 iter 7 loss:3.3241747587453574e-05 norm:8.249745405919384e-06 max memory_allocated 27127.5244140625 
+[2025-03-26 12:28:46 root] (omniquant.py 289): INFO layer 0 iter 8 loss:3.301672768429853e-05 norm:9.285648047807626e-06 max memory_allocated 27127.5244140625 
+[2025-03-26 12:29:34 root] (omniquant.py 289): INFO layer 0 iter 9 loss:3.363559881108813e-05 norm:1.0883184586418793e-05 max memory_allocated 27127.5244140625 
+[2025-03-26 12:29:48 root] (omniquant.py 193): INFO === Start quantize layer 1 ===
+[2025-03-26 12:30:40 root] (omniquant.py 289): INFO layer 1 iter 0 loss:0.00018597891903482378 norm:1.2348701602604706e-05 max memory_allocated 27129.5869140625 
+[2025-03-26 12:31:29 root] (omniquant.py 289): INFO layer 1 iter 1 loss:0.00017454390763305128 norm:9.365336154587567e-06 max memory_allocated 27129.5869140625 
+[2025-03-26 12:32:17 root] (omniquant.py 289): INFO layer 1 iter 2 loss:0.00017134918016381562 norm:9.217767910740804e-06 max memory_allocated 27129.5869140625 
+[2025-03-26 12:33:05 root] (omniquant.py 289): INFO layer 1 iter 3 loss:0.0001701962319202721 norm:1.1142337825731374e-05 max memory_allocated 27129.5869140625 
+[2025-03-26 12:33:53 root] (omniquant.py 289): INFO layer 1 iter 4 loss:0.00016875988512765616 norm:9.173852959065698e-06 max memory_allocated 27129.5869140625 
+[2025-03-26 12:34:41 root] (omniquant.py 289): INFO layer 1 iter 5 loss:0.00016747383051551878 norm:1.0295868378307205e-05 max memory_allocated 27129.5869140625 
+[2025-03-26 12:35:30 root] (omniquant.py 289): INFO layer 1 iter 6 loss:0.00016847348888404667 norm:1.536888157716021e-05 max memory_allocated 27129.5869140625 
+[2025-03-26 12:36:18 root] (omniquant.py 289): INFO layer 1 iter 7 loss:0.00016877765301615 norm:1.412827168678632e-05 max memory_allocated 27129.5869140625 
+[2025-03-26 12:37:07 root] (omniquant.py 289): INFO layer 1 iter 8 loss:0.00016822497127577662 norm:1.4745184671483003e-05 max memory_allocated 27129.5869140625 
+[2025-03-26 12:37:55 root] (omniquant.py 289): INFO layer 1 iter 9 loss:0.0001678516564425081 norm:1.1955113222938962e-05 max memory_allocated 27129.5869140625 
+[2025-03-26 12:38:09 root] (omniquant.py 193): INFO === Start quantize layer 2 ===
+[2025-03-26 12:39:01 root] (omniquant.py 289): INFO layer 2 iter 0 loss:0.00044135621283203363 norm:3.288191874162294e-05 max memory_allocated 27131.6494140625 
+[2025-03-26 12:39:50 root] (omniquant.py 289): INFO layer 2 iter 1 loss:0.00041694598621688783 norm:1.905162753246259e-05 max memory_allocated 27131.6494140625 
+[2025-03-26 12:40:39 root] (omniquant.py 289): INFO layer 2 iter 2 loss:0.0004081559891346842 norm:1.6416712242062204e-05 max memory_allocated 27131.6494140625 
+[2025-03-26 12:41:27 root] (omniquant.py 289): INFO layer 2 iter 3 loss:0.00040295757935382426 norm:1.5159849681367632e-05 max memory_allocated 27131.6494140625 
+[2025-03-26 12:42:15 root] (omniquant.py 289): INFO layer 2 iter 4 loss:0.0003991303965449333 norm:1.3977210983284749e-05 max memory_allocated 27131.6494140625 
+[2025-03-26 12:43:03 root] (omniquant.py 289): INFO layer 2 iter 5 loss:0.0003965585201513022 norm:1.3088238119962625e-05 max memory_allocated 27131.6494140625 
+[2025-03-26 12:43:52 root] (omniquant.py 289): INFO layer 2 iter 6 loss:0.00039442291017621756 norm:1.2760798199451528e-05 max memory_allocated 27131.6494140625 
+[2025-03-26 12:44:41 root] (omniquant.py 289): INFO layer 2 iter 7 loss:0.00039303593803197145 norm:1.2797373528883327e-05 max memory_allocated 27131.6494140625 
+[2025-03-26 12:45:29 root] (omniquant.py 289): INFO layer 2 iter 8 loss:0.0003924173070117831 norm:1.2875251741206739e-05 max memory_allocated 27131.6494140625 
+[2025-03-26 12:46:17 root] (omniquant.py 289): INFO layer 2 iter 9 loss:0.0003920309245586395 norm:1.2235388567205518e-05 max memory_allocated 27131.6494140625 
+[2025-03-26 12:46:31 root] (omniquant.py 193): INFO === Start quantize layer 3 ===
+[2025-03-26 12:47:24 root] (omniquant.py 289): INFO layer 3 iter 0 loss:0.01658632606267929 norm:0.0034676287323236465 max memory_allocated 27133.7119140625 
+[2025-03-26 12:48:12 root] (omniquant.py 289): INFO layer 3 iter 1 loss:0.009288903325796127 norm:0.0015721332747489214 max memory_allocated 27133.7119140625 
+[2025-03-26 12:49:01 root] (omniquant.py 289): INFO layer 3 iter 2 loss:0.008541255258023739 norm:0.0018071518279612064 max memory_allocated 27133.7119140625 
+[2025-03-26 12:49:49 root] (omniquant.py 289): INFO layer 3 iter 3 loss:0.007799218874424696 norm:0.0016789576038718224 max memory_allocated 27133.7119140625 
+[2025-03-26 12:50:37 root] (omniquant.py 289): INFO layer 3 iter 4 loss:0.007278168573975563 norm:0.0018567987717688084 max memory_allocated 27133.7119140625 
+[2025-03-26 12:51:26 root] (omniquant.py 289): INFO layer 3 iter 5 loss:0.006967063993215561 norm:0.0013607797445729375 max memory_allocated 27133.7119140625 
+[2025-03-26 12:52:14 root] (omniquant.py 289): INFO layer 3 iter 6 loss:0.006425553932785988 norm:0.0013731162762269378 max memory_allocated 27133.7119140625 
+[2025-03-26 12:53:03 root] (omniquant.py 289): INFO layer 3 iter 7 loss:0.006301381159573793 norm:0.0012581313494592905 max memory_allocated 27133.7119140625 
+[2025-03-26 12:53:51 root] (omniquant.py 289): INFO layer 3 iter 8 loss:0.0062002683989703655 norm:0.001421420369297266 max memory_allocated 27133.7119140625 
+[2025-03-26 12:54:40 root] (omniquant.py 289): INFO layer 3 iter 9 loss:0.0063691814430058 norm:0.0013614618219435215 max memory_allocated 27133.7119140625 
+[2025-03-26 12:54:54 root] (omniquant.py 193): INFO === Start quantize layer 4 ===
+[2025-03-26 12:55:47 root] (omniquant.py 289): INFO layer 4 iter 0 loss:0.007375197485089302 norm:7.814900163793936e-05 max memory_allocated 27135.7744140625 
+[2025-03-26 12:56:35 root] (omniquant.py 289): INFO layer 4 iter 1 loss:0.0073097702115774155 norm:5.619731382466853e-05 max memory_allocated 27135.7744140625 
+[2025-03-26 12:57:24 root] (omniquant.py 289): INFO layer 4 iter 2 loss:0.007290460169315338 norm:5.213410622673109e-05 max memory_allocated 27135.7744140625 
+[2025-03-26 12:58:12 root] (omniquant.py 289): INFO layer 4 iter 3 loss:0.007279263809323311 norm:4.9729584134183824e-05 max memory_allocated 27135.7744140625 
+[2025-03-26 12:59:01 root] (omniquant.py 289): INFO layer 4 iter 4 loss:0.0072729685343801975 norm:5.052103369962424e-05 max memory_allocated 27135.7744140625 
+[2025-03-26 12:59:49 root] (omniquant.py 289): INFO layer 4 iter 5 loss:0.007267048116773367 norm:5.063404023530893e-05 max memory_allocated 27135.7744140625 
+[2025-03-26 13:00:38 root] (omniquant.py 289): INFO layer 4 iter 6 loss:0.007263372652232647 norm:5.2107046940363944e-05 max memory_allocated 27135.7744140625 
+[2025-03-26 13:01:26 root] (omniquant.py 289): INFO layer 4 iter 7 loss:0.007259816396981478 norm:4.876764796790667e-05 max memory_allocated 27135.7744140625 
+[2025-03-26 13:02:14 root] (omniquant.py 289): INFO layer 4 iter 8 loss:0.007257822901010513 norm:4.913421071250923e-05 max memory_allocated 27135.7744140625 
+[2025-03-26 13:03:03 root] (omniquant.py 289): INFO layer 4 iter 9 loss:0.007255011238157749 norm:4.850914774578996e-05 max memory_allocated 27135.7744140625 
+[2025-03-26 13:03:18 root] (omniquant.py 193): INFO === Start quantize layer 5 ===
+[2025-03-26 13:04:10 root] (omniquant.py 289): INFO layer 5 iter 0 loss:0.008421479724347591 norm:0.00013007569941692054 max memory_allocated 27137.8369140625 
+[2025-03-26 13:04:59 root] (omniquant.py 289): INFO layer 5 iter 1 loss:0.008313157595694065 norm:7.563391409348696e-05 max memory_allocated 27137.8369140625 
+[2025-03-26 13:05:47 root] (omniquant.py 289): INFO layer 5 iter 2 loss:0.008280239999294281 norm:7.251540955621749e-05 max memory_allocated 27137.8369140625 
+[2025-03-26 13:06:35 root] (omniquant.py 289): INFO layer 5 iter 3 loss:0.008263969793915749 norm:6.630367715843022e-05 max memory_allocated 27137.8369140625 
+[2025-03-26 13:07:24 root] (omniquant.py 289): INFO layer 5 iter 4 loss:0.008251465857028961 norm:6.341396510833874e-05 max memory_allocated 27137.8369140625 
+[2025-03-26 13:08:12 root] (omniquant.py 289): INFO layer 5 iter 5 loss:0.008242031559348106 norm:6.512575055239722e-05 max memory_allocated 27137.8369140625 
+[2025-03-26 13:09:01 root] (omniquant.py 289): INFO layer 5 iter 6 loss:0.008233764208853245 norm:6.326689617708325e-05 max memory_allocated 27137.8369140625 
+[2025-03-26 13:09:49 root] (omniquant.py 289): INFO layer 5 iter 7 loss:0.008228872902691364 norm:6.104136991780251e-05 max memory_allocated 27137.8369140625 
+[2025-03-26 13:10:38 root] (omniquant.py 289): INFO layer 5 iter 8 loss:0.008223999291658401 norm:6.0021997342118993e-05 max memory_allocated 27137.8369140625 
+[2025-03-26 13:11:26 root] (omniquant.py 289): INFO layer 5 iter 9 loss:0.008218064904212952 norm:5.9993224567733705e-05 max memory_allocated 27137.8369140625 
+[2025-03-26 13:11:41 root] (omniquant.py 193): INFO === Start quantize layer 6 ===
+[2025-03-26 13:12:33 root] (omniquant.py 289): INFO layer 6 iter 0 loss:0.009906888008117676 norm:0.00022355503460858017 max memory_allocated 27139.8994140625 
+[2025-03-26 13:13:21 root] (omniquant.py 289): INFO layer 6 iter 1 loss:0.009741862304508686 norm:0.00014728415408171713 max memory_allocated 27139.8994140625 
+[2025-03-26 13:14:10 root] (omniquant.py 289): INFO layer 6 iter 2 loss:0.009686674922704697 norm:0.00013309514906723052 max memory_allocated 27139.8994140625 
+[2025-03-26 13:14:58 root] (omniquant.py 289): INFO layer 6 iter 3 loss:0.009654177352786064 norm:0.00013069083797745407 max memory_allocated 27139.8994140625 
+[2025-03-26 13:15:47 root] (omniquant.py 289): INFO layer 6 iter 4 loss:0.00963497906923294 norm:0.00011773871665354818 max memory_allocated 27139.8994140625 
+[2025-03-26 13:16:35 root] (omniquant.py 289): INFO layer 6 iter 5 loss:0.00962204672396183 norm:0.00011802567314589396 max memory_allocated 27139.8994140625 
+[2025-03-26 13:17:24 root] (omniquant.py 289): INFO layer 6 iter 6 loss:0.009606167674064636 norm:0.00011987999459961429 max memory_allocated 27139.8994140625 
+[2025-03-26 13:18:12 root] (omniquant.py 289): INFO layer 6 iter 7 loss:0.009588271379470825 norm:0.00011613742390181869 max memory_allocated 27139.8994140625 
+[2025-03-26 13:19:00 root] (omniquant.py 289): INFO layer 6 iter 8 loss:0.009565897285938263 norm:0.00011484709102660418 max memory_allocated 27139.8994140625 
+[2025-03-26 13:19:49 root] (omniquant.py 289): INFO layer 6 iter 9 loss:0.00953647680580616 norm:0.00011325848754495382 max memory_allocated 27139.8994140625 
+[2025-03-26 13:20:03 root] (omniquant.py 193): INFO === Start quantize layer 7 ===
+[2025-03-26 13:20:55 root] (omniquant.py 289): INFO layer 7 iter 0 loss:0.012024374678730965 norm:0.000427221559220925 max memory_allocated 27141.9619140625 
+[2025-03-26 13:21:44 root] (omniquant.py 289): INFO layer 7 iter 1 loss:0.011754666455090046 norm:0.0002128121122950688 max memory_allocated 27141.9619140625 
+[2025-03-26 13:22:32 root] (omniquant.py 289): INFO layer 7 iter 2 loss:0.01168014481663704 norm:0.00019203798728995025 max memory_allocated 27141.9619140625 
+[2025-03-26 13:23:21 root] (omniquant.py 289): INFO layer 7 iter 3 loss:0.011630451306700706 norm:0.00018151687982026488 max memory_allocated 27141.9619140625 
+[2025-03-26 13:24:09 root] (omniquant.py 289): INFO layer 7 iter 4 loss:0.011575521901249886 norm:0.00017002015374600887 max memory_allocated 27141.9619140625 
+[2025-03-26 13:24:58 root] (omniquant.py 289): INFO layer 7 iter 5 loss:0.011521434411406517 norm:0.00017030992603395134 max memory_allocated 27141.9619140625 
+[2025-03-26 13:25:46 root] (omniquant.py 289): INFO layer 7 iter 6 loss:0.011465778574347496 norm:0.0001629496255191043 max memory_allocated 27141.9619140625 
+[2025-03-26 13:26:35 root] (omniquant.py 289): INFO layer 7 iter 7 loss:0.011406329460442066 norm:0.000153237342601642 max memory_allocated 27141.9619140625 
+[2025-03-26 13:27:23 root] (omniquant.py 289): INFO layer 7 iter 8 loss:0.011351818218827248 norm:0.0001438896870240569 max memory_allocated 27141.9619140625 
+[2025-03-26 13:28:11 root] (omniquant.py 289): INFO layer 7 iter 9 loss:0.01131431944668293 norm:0.00014530408952850848 max memory_allocated 27141.9619140625 
+[2025-03-26 13:28:26 root] (omniquant.py 193): INFO === Start quantize layer 8 ===
+[2025-03-26 13:29:18 root] (omniquant.py 289): INFO layer 8 iter 0 loss:0.01413831114768982 norm:0.00038130898610688746 max memory_allocated 27144.0244140625 
+[2025-03-26 13:30:07 root] (omniquant.py 289): INFO layer 8 iter 1 loss:0.013776122592389584 norm:0.00021352522890083492 max memory_allocated 27144.0244140625 
+[2025-03-26 13:30:56 root] (omniquant.py 289): INFO layer 8 iter 2 loss:0.013653824105858803 norm:0.00019645933934953064 max memory_allocated 27144.0244140625 
+[2025-03-26 13:31:44 root] (omniquant.py 289): INFO layer 8 iter 3 loss:0.013564933091402054 norm:0.00017368145927321166 max memory_allocated 27144.0244140625 
+[2025-03-26 13:32:32 root] (omniquant.py 289): INFO layer 8 iter 4 loss:0.013486579060554504 norm:0.00015928875654935837 max memory_allocated 27144.0244140625 
+[2025-03-26 13:33:20 root] (omniquant.py 289): INFO layer 8 iter 5 loss:0.013409890234470367 norm:0.00015075264673214406 max memory_allocated 27144.0244140625 
+[2025-03-26 13:34:09 root] (omniquant.py 289): INFO layer 8 iter 6 loss:0.013314081355929375 norm:0.00014214575639925897 max memory_allocated 27144.0244140625 
+[2025-03-26 13:34:57 root] (omniquant.py 289): INFO layer 8 iter 7 loss:0.013231492601335049 norm:0.00014381691289599985 max memory_allocated 27144.0244140625 
+[2025-03-26 13:35:46 root] (omniquant.py 289): INFO layer 8 iter 8 loss:0.01318474393337965 norm:0.0001384397764923051 max memory_allocated 27144.0244140625 
+[2025-03-26 13:36:34 root] (omniquant.py 289): INFO layer 8 iter 9 loss:0.013167163357138634 norm:0.00013987078273203224 max memory_allocated 27144.0244140625 
+[2025-03-26 13:36:49 root] (omniquant.py 193): INFO === Start quantize layer 9 ===
+[2025-03-26 13:37:41 root] (omniquant.py 289): INFO layer 9 iter 0 loss:0.01804465427994728 norm:0.0011807777918875217 max memory_allocated 27146.0869140625 
+[2025-03-26 13:38:29 root] (omniquant.py 289): INFO layer 9 iter 1 loss:0.016793152317404747 norm:0.00039475588710047305 max memory_allocated 27146.0869140625 
+[2025-03-26 13:39:18 root] (omniquant.py 289): INFO layer 9 iter 2 loss:0.016432346776127815 norm:0.00032971458858810365 max memory_allocated 27146.0869140625 
+[2025-03-26 13:40:06 root] (omniquant.py 289): INFO layer 9 iter 3 loss:0.016172844916582108 norm:0.00026748570962809026 max memory_allocated 27146.0869140625 
+[2025-03-26 13:40:54 root] (omniquant.py 289): INFO layer 9 iter 4 loss:0.016003157943487167 norm:0.00024601203040219843 max memory_allocated 27146.0869140625 
+[2025-03-26 13:41:43 root] (omniquant.py 289): INFO layer 9 iter 5 loss:0.015826515853405 norm:0.0002273116260766983 max memory_allocated 27146.0869140625 
+[2025-03-26 13:42:31 root] (omniquant.py 289): INFO layer 9 iter 6 loss:0.015675853937864304 norm:0.00022206130961421877 max memory_allocated 27146.0869140625 
+[2025-03-26 13:43:20 root] (omniquant.py 289): INFO layer 9 iter 7 loss:0.015592142939567566 norm:0.00020942240371368825 max memory_allocated 27146.0869140625 
+[2025-03-26 13:44:08 root] (omniquant.py 289): INFO layer 9 iter 8 loss:0.015548011288046837 norm:0.00020668155048042536 max memory_allocated 27146.0869140625 
+[2025-03-26 13:44:56 root] (omniquant.py 289): INFO layer 9 iter 9 loss:0.015507329255342484 norm:0.00019377826538402587 max memory_allocated 27146.0869140625 
+[2025-03-26 13:45:11 root] (omniquant.py 193): INFO === Start quantize layer 10 ===
+[2025-03-26 13:46:03 root] (omniquant.py 289): INFO layer 10 iter 0 loss:0.019944405183196068 norm:0.0006493536639027297 max memory_allocated 27148.1494140625 
+[2025-03-26 13:46:51 root] (omniquant.py 289): INFO layer 10 iter 1 loss:0.019142992794513702 norm:0.0003244933614041656 max memory_allocated 27148.1494140625 
+[2025-03-26 13:47:40 root] (omniquant.py 289): INFO layer 10 iter 2 loss:0.01876179315149784 norm:0.0002828892320394516 max memory_allocated 27148.1494140625 
+[2025-03-26 13:48:28 root] (omniquant.py 289): INFO layer 10 iter 3 loss:0.018496038392186165 norm:0.0002403246908215806 max memory_allocated 27148.1494140625 
+[2025-03-26 13:49:17 root] (omniquant.py 289): INFO layer 10 iter 4 loss:0.018284298479557037 norm:0.00022222442203201354 max memory_allocated 27148.1494140625 
+[2025-03-26 13:50:05 root] (omniquant.py 289): INFO layer 10 iter 5 loss:0.018076056614518166 norm:0.00020577786199282855 max memory_allocated 27148.1494140625 
+[2025-03-26 13:50:53 root] (omniquant.py 289): INFO layer 10 iter 6 loss:0.01792869158089161 norm:0.00019845584756694734 max memory_allocated 27148.1494140625 
+[2025-03-26 13:51:42 root] (omniquant.py 289): INFO layer 10 iter 7 loss:0.017856059595942497 norm:0.0001959489018190652 max memory_allocated 27148.1494140625 
+[2025-03-26 13:52:30 root] (omniquant.py 289): INFO layer 10 iter 8 loss:0.01781034842133522 norm:0.0001933527528308332 max memory_allocated 27148.1494140625 
+[2025-03-26 13:53:18 root] (omniquant.py 289): INFO layer 10 iter 9 loss:0.017766669392585754 norm:0.00018747099966276437 max memory_allocated 27148.1494140625 
+[2025-03-26 13:53:33 root] (omniquant.py 193): INFO === Start quantize layer 11 ===
+[2025-03-26 13:54:25 root] (omniquant.py 289): INFO layer 11 iter 0 loss:0.022399919107556343 norm:0.000652180053293705 max memory_allocated 27150.2119140625 
+[2025-03-26 13:55:14 root] (omniquant.py 289): INFO layer 11 iter 1 loss:0.021518468856811523 norm:0.0002944285806734115 max memory_allocated 27150.2119140625 
+[2025-03-26 13:56:03 root] (omniquant.py 289): INFO layer 11 iter 2 loss:0.021135438233613968 norm:0.0002676363510545343 max memory_allocated 27150.2119140625 
+[2025-03-26 13:56:51 root] (omniquant.py 289): INFO layer 11 iter 3 loss:0.020835943520069122 norm:0.0002342086809221655 max memory_allocated 27150.2119140625 
+[2025-03-26 13:57:40 root] (omniquant.py 289): INFO layer 11 iter 4 loss:0.02056700550019741 norm:0.0002079457335639745 max memory_allocated 27150.2119140625 
+[2025-03-26 13:58:28 root] (omniquant.py 289): INFO layer 11 iter 5 loss:0.020328376442193985 norm:0.00019180792151018977 max memory_allocated 27150.2119140625 
+[2025-03-26 13:59:16 root] (omniquant.py 289): INFO layer 11 iter 6 loss:0.020206134766340256 norm:0.00018249187269248068 max memory_allocated 27150.2119140625 
+[2025-03-26 14:00:04 root] (omniquant.py 289): INFO layer 11 iter 7 loss:0.020141582936048508 norm:0.0001737974234856665 max memory_allocated 27150.2119140625 
+[2025-03-26 14:00:53 root] (omniquant.py 289): INFO layer 11 iter 8 loss:0.0200934037566185 norm:0.00016879338363651186 max memory_allocated 27150.2119140625 
+[2025-03-26 14:01:41 root] (omniquant.py 289): INFO layer 11 iter 9 loss:0.020052600651979446 norm:0.00016209081513807178 max memory_allocated 27150.2119140625 
+[2025-03-26 14:01:56 root] (omniquant.py 193): INFO === Start quantize layer 12 ===
+[2025-03-26 14:02:48 root] (omniquant.py 289): INFO layer 12 iter 0 loss:0.025581583380699158 norm:0.0010914815356954932 max memory_allocated 27152.2744140625 
+[2025-03-26 14:03:36 root] (omniquant.py 289): INFO layer 12 iter 1 loss:0.024334225803613663 norm:0.000450500869192183 max memory_allocated 27152.2744140625 
+[2025-03-26 14:04:25 root] (omniquant.py 289): INFO layer 12 iter 2 loss:0.023807596415281296 norm:0.00033188433735631406 max memory_allocated 27152.2744140625 
+[2025-03-26 14:05:13 root] (omniquant.py 289): INFO layer 12 iter 3 loss:0.023399045690894127 norm:0.00028857513098046184 max memory_allocated 27152.2744140625 
+[2025-03-26 14:06:02 root] (omniquant.py 289): INFO layer 12 iter 4 loss:0.023027347400784492 norm:0.00027605745708569884 max memory_allocated 27152.2744140625 
+[2025-03-26 14:06:50 root] (omniquant.py 289): INFO layer 12 iter 5 loss:0.02276589721441269 norm:0.000248184020165354 max memory_allocated 27152.2744140625 
+[2025-03-26 14:07:39 root] (omniquant.py 289): INFO layer 12 iter 6 loss:0.02264806441962719 norm:0.00022759127023164183 max memory_allocated 27152.2744140625 
+[2025-03-26 14:08:27 root] (omniquant.py 289): INFO layer 12 iter 7 loss:0.022572508081793785 norm:0.0002318571787327528 max memory_allocated 27152.2744140625 
+[2025-03-26 14:09:16 root] (omniquant.py 289): INFO layer 12 iter 8 loss:0.022512082010507584 norm:0.00022468084353022277 max memory_allocated 27152.2744140625 
+[2025-03-26 14:10:05 root] (omniquant.py 289): INFO layer 12 iter 9 loss:0.02246841788291931 norm:0.00020673518883995712 max memory_allocated 27152.2744140625 
+[2025-03-26 14:10:19 root] (omniquant.py 193): INFO === Start quantize layer 13 ===
+[2025-03-26 14:11:15 root] (omniquant.py 289): INFO layer 13 iter 0 loss:0.02878246083855629 norm:0.0010550024453550577 max memory_allocated 27154.3369140625 
+[2025-03-26 14:12:04 root] (omniquant.py 289): INFO layer 13 iter 1 loss:0.027640584856271744 norm:0.0004018096369691193 max memory_allocated 27154.3369140625 
+[2025-03-26 14:12:52 root] (omniquant.py 289): INFO layer 13 iter 2 loss:0.027133159339427948 norm:0.0003469000803306699 max memory_allocated 27154.3369140625 
+[2025-03-26 14:13:40 root] (omniquant.py 289): INFO layer 13 iter 3 loss:0.02665875293314457 norm:0.00029452063608914614 max memory_allocated 27154.3369140625 
+[2025-03-26 14:14:29 root] (omniquant.py 289): INFO layer 13 iter 4 loss:0.02622627466917038 norm:0.0002845351991709322 max memory_allocated 27154.3369140625 
+[2025-03-26 14:15:17 root] (omniquant.py 289): INFO layer 13 iter 5 loss:0.02600540779531002 norm:0.0002557597472332418 max memory_allocated 27154.3369140625 
+[2025-03-26 14:16:05 root] (omniquant.py 289): INFO layer 13 iter 6 loss:0.0258861742913723 norm:0.0002553445810917765 max memory_allocated 27154.3369140625 
+[2025-03-26 14:16:54 root] (omniquant.py 289): INFO layer 13 iter 7 loss:0.025783125311136246 norm:0.0002352007431909442 max memory_allocated 27154.3369140625 
+[2025-03-26 14:17:42 root] (omniquant.py 289): INFO layer 13 iter 8 loss:0.02571369707584381 norm:0.0002420363889541477 max memory_allocated 27154.3369140625 
+[2025-03-26 14:18:31 root] (omniquant.py 289): INFO layer 13 iter 9 loss:0.025661148130893707 norm:0.00023859378416091204 max memory_allocated 27154.3369140625 
+[2025-03-26 14:18:45 root] (omniquant.py 193): INFO === Start quantize layer 14 ===
+[2025-03-26 14:19:38 root] (omniquant.py 289): INFO layer 14 iter 0 loss:0.03423440828919411 norm:0.000989336520433426 max memory_allocated 27156.3994140625 
+[2025-03-26 14:20:26 root] (omniquant.py 289): INFO layer 14 iter 1 loss:0.032776057720184326 norm:0.0004312045348342508 max memory_allocated 27156.3994140625 
+[2025-03-26 14:21:15 root] (omniquant.py 289): INFO layer 14 iter 2 loss:0.03196956589818001 norm:0.00038462120573967695 max memory_allocated 27156.3994140625 
+[2025-03-26 14:22:03 root] (omniquant.py 289): INFO layer 14 iter 3 loss:0.031237026676535606 norm:0.00034464907366782427 max memory_allocated 27156.3994140625 
+[2025-03-26 14:22:51 root] (omniquant.py 289): INFO layer 14 iter 4 loss:0.030698135495185852 norm:0.0003246462729293853 max memory_allocated 27156.3994140625 
+[2025-03-26 14:23:40 root] (omniquant.py 289): INFO layer 14 iter 5 loss:0.030459627509117126 norm:0.000296379963401705 max memory_allocated 27156.3994140625 
+[2025-03-26 14:24:28 root] (omniquant.py 289): INFO layer 14 iter 6 loss:0.030317367985844612 norm:0.0002859403030015528 max memory_allocated 27156.3994140625 
+[2025-03-26 14:25:17 root] (omniquant.py 289): INFO layer 14 iter 7 loss:0.030226586386561394 norm:0.00026856473414227366 max memory_allocated 27156.3994140625 
+[2025-03-26 14:26:05 root] (omniquant.py 289): INFO layer 14 iter 8 loss:0.030164863914251328 norm:0.0002646591456141323 max memory_allocated 27156.3994140625 
+[2025-03-26 14:26:53 root] (omniquant.py 289): INFO layer 14 iter 9 loss:0.030115224421024323 norm:0.00025279837427660823 max memory_allocated 27156.3994140625 
+[2025-03-26 14:27:08 root] (omniquant.py 193): INFO === Start quantize layer 15 ===
+[2025-03-26 14:28:00 root] (omniquant.py 289): INFO layer 15 iter 0 loss:0.03758314251899719 norm:0.0009864869061857462 max memory_allocated 27158.4619140625 
+[2025-03-26 14:28:48 root] (omniquant.py 289): INFO layer 15 iter 1 loss:0.036280307918787 norm:0.0005523241707123816 max memory_allocated 27158.4619140625 
+[2025-03-26 14:29:37 root] (omniquant.py 289): INFO layer 15 iter 2 loss:0.035550739616155624 norm:0.00046081701293587685 max memory_allocated 27158.4619140625 
+[2025-03-26 14:30:25 root] (omniquant.py 289): INFO layer 15 iter 3 loss:0.034761231392621994 norm:0.0004080493235960603 max memory_allocated 27158.4619140625 
+[2025-03-26 14:31:14 root] (omniquant.py 289): INFO layer 15 iter 4 loss:0.034275442361831665 norm:0.00036485219607129693 max memory_allocated 27158.4619140625 
+[2025-03-26 14:32:03 root] (omniquant.py 289): INFO layer 15 iter 5 loss:0.03404606133699417 norm:0.00034674053313210607 max memory_allocated 27158.4619140625 
+[2025-03-26 14:32:51 root] (omniquant.py 289): INFO layer 15 iter 6 loss:0.03388555347919464 norm:0.00031336882966570556 max memory_allocated 27158.4619140625 
+[2025-03-26 14:33:39 root] (omniquant.py 289): INFO layer 15 iter 7 loss:0.03380046412348747 norm:0.00029976468067616224 max memory_allocated 27158.4619140625 
+[2025-03-26 14:34:28 root] (omniquant.py 289): INFO layer 15 iter 8 loss:0.03373394533991814 norm:0.0002826657728292048 max memory_allocated 27158.4619140625 
+[2025-03-26 14:35:16 root] (omniquant.py 289): INFO layer 15 iter 9 loss:0.03368764370679855 norm:0.00028748114709742367 max memory_allocated 27158.4619140625 
+[2025-03-26 14:35:31 root] (omniquant.py 193): INFO === Start quantize layer 16 ===
+[2025-03-26 14:36:23 root] (omniquant.py 289): INFO layer 16 iter 0 loss:0.044589582830667496 norm:0.001975024351850152 max memory_allocated 27160.5244140625 
+[2025-03-26 14:37:11 root] (omniquant.py 289): INFO layer 16 iter 1 loss:0.042454563081264496 norm:0.000694908550940454 max memory_allocated 27160.5244140625 
+[2025-03-26 14:38:00 root] (omniquant.py 289): INFO layer 16 iter 2 loss:0.04139820486307144 norm:0.0005969232879579067 max memory_allocated 27160.5244140625 
+[2025-03-26 14:38:48 root] (omniquant.py 289): INFO layer 16 iter 3 loss:0.040283504873514175 norm:0.00047730980440974236 max memory_allocated 27160.5244140625 
+[2025-03-26 14:39:37 root] (omniquant.py 289): INFO layer 16 iter 4 loss:0.03981418535113335 norm:0.0004225773736834526 max memory_allocated 27160.5244140625 
+[2025-03-26 14:40:26 root] (omniquant.py 289): INFO layer 16 iter 5 loss:0.03953412175178528 norm:0.00038410723209381104 max memory_allocated 27160.5244140625 
+[2025-03-26 14:41:14 root] (omniquant.py 289): INFO layer 16 iter 6 loss:0.03934452310204506 norm:0.00035912077873945236 max memory_allocated 27160.5244140625 
+[2025-03-26 14:42:03 root] (omniquant.py 289): INFO layer 16 iter 7 loss:0.0392078272998333 norm:0.00034029968082904816 max memory_allocated 27160.5244140625 
+[2025-03-26 14:42:51 root] (omniquant.py 289): INFO layer 16 iter 8 loss:0.03909498453140259 norm:0.00033105668262578547 max memory_allocated 27160.5244140625 
+[2025-03-26 14:43:40 root] (omniquant.py 289): INFO layer 16 iter 9 loss:0.03899481147527695 norm:0.0003222090017516166 max memory_allocated 27160.5244140625 
+[2025-03-26 14:43:54 root] (omniquant.py 193): INFO === Start quantize layer 17 ===
+[2025-03-26 14:44:46 root] (omniquant.py 289): INFO layer 17 iter 0 loss:0.048816077411174774 norm:0.0017180836293846369 max memory_allocated 27162.5869140625 
+[2025-03-26 14:45:35 root] (omniquant.py 289): INFO layer 17 iter 1 loss:0.047192301601171494 norm:0.0006624730303883553 max memory_allocated 27162.5869140625 
+[2025-03-26 14:46:23 root] (omniquant.py 289): INFO layer 17 iter 2 loss:0.04629192873835564 norm:0.0005894546047784388 max memory_allocated 27162.5869140625 
+[2025-03-26 14:47:11 root] (omniquant.py 289): INFO layer 17 iter 3 loss:0.04534558206796646 norm:0.0005358887719921768 max memory_allocated 27162.5869140625 
+[2025-03-26 14:47:59 root] (omniquant.py 289): INFO layer 17 iter 4 loss:0.04491811245679855 norm:0.0004677511169575155 max memory_allocated 27162.5869140625 
+[2025-03-26 14:48:47 root] (omniquant.py 289): INFO layer 17 iter 5 loss:0.04465755075216293 norm:0.0004274557577446103 max memory_allocated 27162.5869140625 
+[2025-03-26 14:49:36 root] (omniquant.py 289): INFO layer 17 iter 6 loss:0.04447215422987938 norm:0.00040292914491146803 max memory_allocated 27162.5869140625 
+[2025-03-26 14:50:24 root] (omniquant.py 289): INFO layer 17 iter 7 loss:0.044344671070575714 norm:0.0003936925786547363 max memory_allocated 27162.5869140625 
+[2025-03-26 14:51:13 root] (omniquant.py 289): INFO layer 17 iter 8 loss:0.04423011466860771 norm:0.00038828435936011374 max memory_allocated 27162.5869140625 
+[2025-03-26 14:52:01 root] (omniquant.py 289): INFO layer 17 iter 9 loss:0.04412759840488434 norm:0.00038599345134571195 max memory_allocated 27162.5869140625 
+[2025-03-26 14:52:15 root] (omniquant.py 193): INFO === Start quantize layer 18 ===
+[2025-03-26 14:53:08 root] (omniquant.py 289): INFO layer 18 iter 0 loss:0.055384017527103424 norm:0.0021862387657165527 max memory_allocated 27164.6494140625 
+[2025-03-26 14:53:56 root] (omniquant.py 289): INFO layer 18 iter 1 loss:0.053100187331438065 norm:0.0007589523447677493 max memory_allocated 27164.6494140625 
+[2025-03-26 14:54:45 root] (omniquant.py 289): INFO layer 18 iter 2 loss:0.0521106980741024 norm:0.0006255151238292456 max memory_allocated 27164.6494140625 
+[2025-03-26 14:55:33 root] (omniquant.py 289): INFO layer 18 iter 3 loss:0.051165446639060974 norm:0.0005409891600720584 max memory_allocated 27164.6494140625 
+[2025-03-26 14:56:22 root] (omniquant.py 289): INFO layer 18 iter 4 loss:0.050812773406505585 norm:0.0004917067708447576 max memory_allocated 27164.6494140625 
+[2025-03-26 14:57:10 root] (omniquant.py 289): INFO layer 18 iter 5 loss:0.05055040866136551 norm:0.00045081370626576245 max memory_allocated 27164.6494140625 
+[2025-03-26 14:57:59 root] (omniquant.py 289): INFO layer 18 iter 6 loss:0.050326377153396606 norm:0.00043488680967129767 max memory_allocated 27164.6494140625 
+[2025-03-26 14:58:47 root] (omniquant.py 289): INFO layer 18 iter 7 loss:0.05015148967504501 norm:0.0004066959663759917 max memory_allocated 27164.6494140625 
+[2025-03-26 14:59:35 root] (omniquant.py 289): INFO layer 18 iter 8 loss:0.050025805830955505 norm:0.0004031781863886863 max memory_allocated 27164.6494140625 
+[2025-03-26 15:00:23 root] (omniquant.py 289): INFO layer 18 iter 9 loss:0.04991732910275459 norm:0.0004007675452157855 max memory_allocated 27164.6494140625 
+[2025-03-26 15:00:38 root] (omniquant.py 193): INFO === Start quantize layer 19 ===
+[2025-03-26 15:01:30 root] (omniquant.py 289): INFO layer 19 iter 0 loss:0.06339292228221893 norm:0.002183691132813692 max memory_allocated 27166.7119140625 
+[2025-03-26 15:02:18 root] (omniquant.py 289): INFO layer 19 iter 1 loss:0.06123517081141472 norm:0.0008202065946534276 max memory_allocated 27166.7119140625 
+[2025-03-26 15:03:06 root] (omniquant.py 289): INFO layer 19 iter 2 loss:0.060106731951236725 norm:0.0007049731211736798 max memory_allocated 27166.7119140625 
+[2025-03-26 15:03:55 root] (omniquant.py 289): INFO layer 19 iter 3 loss:0.059091221541166306 norm:0.0006393365911208093 max memory_allocated 27166.7119140625 
+[2025-03-26 15:04:43 root] (omniquant.py 289): INFO layer 19 iter 4 loss:0.05868302285671234 norm:0.0005934032960794866 max memory_allocated 27166.7119140625 
+[2025-03-26 15:05:32 root] (omniquant.py 289): INFO layer 19 iter 5 loss:0.058378808200359344 norm:0.0005466783186420798 max memory_allocated 27166.7119140625 
+[2025-03-26 15:06:20 root] (omniquant.py 289): INFO layer 19 iter 6 loss:0.05815645307302475 norm:0.0005131560610607266 max memory_allocated 27166.7119140625 
+[2025-03-26 15:07:08 root] (omniquant.py 289): INFO layer 19 iter 7 loss:0.05796249210834503 norm:0.0004822677292395383 max memory_allocated 27166.7119140625 
+[2025-03-26 15:07:57 root] (omniquant.py 289): INFO layer 19 iter 8 loss:0.057809989899396896 norm:0.0004891672288067639 max memory_allocated 27166.7119140625 
+[2025-03-26 15:08:45 root] (omniquant.py 289): INFO layer 19 iter 9 loss:0.05769014731049538 norm:0.00046798825496807694 max memory_allocated 27166.7119140625 
+[2025-03-26 15:08:59 root] (omniquant.py 193): INFO === Start quantize layer 20 ===
+[2025-03-26 15:09:52 root] (omniquant.py 289): INFO layer 20 iter 0 loss:0.07174594700336456 norm:0.001886242302134633 max memory_allocated 27168.7744140625 
+[2025-03-26 15:10:40 root] (omniquant.py 289): INFO layer 20 iter 1 loss:0.06989939510822296 norm:0.0008303094655275345 max memory_allocated 27168.7744140625 
+[2025-03-26 15:11:28 root] (omniquant.py 289): INFO layer 20 iter 2 loss:0.06859352439641953 norm:0.0007132833707146347 max memory_allocated 27168.7744140625 
+[2025-03-26 15:12:17 root] (omniquant.py 289): INFO layer 20 iter 3 loss:0.0675373449921608 norm:0.0005983576993457973 max memory_allocated 27168.7744140625 
+[2025-03-26 15:13:05 root] (omniquant.py 289): INFO layer 20 iter 4 loss:0.06712241470813751 norm:0.0005378846544772387 max memory_allocated 27168.7744140625 
+[2025-03-26 15:13:54 root] (omniquant.py 289): INFO layer 20 iter 5 loss:0.06680940091609955 norm:0.0005025195423513651 max memory_allocated 27168.7744140625 
+[2025-03-26 15:14:42 root] (omniquant.py 289): INFO layer 20 iter 6 loss:0.06657018512487411 norm:0.0004901966312900186 max memory_allocated 27168.7744140625 
+[2025-03-26 15:15:31 root] (omniquant.py 289): INFO layer 20 iter 7 loss:0.0663708820939064 norm:0.00045300679630599916 max memory_allocated 27168.7744140625 
+[2025-03-26 15:16:20 root] (omniquant.py 289): INFO layer 20 iter 8 loss:0.06621599942445755 norm:0.0004490644787438214 max memory_allocated 27168.7744140625 
+[2025-03-26 15:17:08 root] (omniquant.py 289): INFO layer 20 iter 9 loss:0.06610836833715439 norm:0.00044217228423804045 max memory_allocated 27168.7744140625 
+[2025-03-26 15:17:22 root] (omniquant.py 193): INFO === Start quantize layer 21 ===
+[2025-03-26 15:18:15 root] (omniquant.py 289): INFO layer 21 iter 0 loss:0.0872514471411705 norm:0.0020579718984663486 max memory_allocated 27170.8369140625 
+[2025-03-26 15:19:03 root] (omniquant.py 289): INFO layer 21 iter 1 loss:0.08481067419052124 norm:0.0010880683548748493 max memory_allocated 27170.8369140625 
+[2025-03-26 15:19:51 root] (omniquant.py 289): INFO layer 21 iter 2 loss:0.08306404948234558 norm:0.0009188349358737469 max memory_allocated 27170.8369140625 
+[2025-03-26 15:20:40 root] (omniquant.py 289): INFO layer 21 iter 3 loss:0.08186815679073334 norm:0.0007793193217366934 max memory_allocated 27170.8369140625 
+[2025-03-26 15:21:28 root] (omniquant.py 289): INFO layer 21 iter 4 loss:0.08131203055381775 norm:0.000729172199498862 max memory_allocated 27170.8369140625 
+[2025-03-26 15:22:16 root] (omniquant.py 289): INFO layer 21 iter 5 loss:0.08090012520551682 norm:0.0006525276694446802 max memory_allocated 27170.8369140625 
+[2025-03-26 15:23:05 root] (omniquant.py 289): INFO layer 21 iter 6 loss:0.08062245696783066 norm:0.0006260639638639987 max memory_allocated 27170.8369140625 
+[2025-03-26 15:23:53 root] (omniquant.py 289): INFO layer 21 iter 7 loss:0.08038424700498581 norm:0.0005948716425336897 max memory_allocated 27170.8369140625 
+[2025-03-26 15:24:42 root] (omniquant.py 289): INFO layer 21 iter 8 loss:0.08019618690013885 norm:0.0005755559541285038 max memory_allocated 27170.8369140625 
+[2025-03-26 15:25:30 root] (omniquant.py 289): INFO layer 21 iter 9 loss:0.08007541298866272 norm:0.0005832371534779668 max memory_allocated 27170.8369140625 
+[2025-03-26 15:25:45 root] (omniquant.py 193): INFO === Start quantize layer 22 ===
+[2025-03-26 15:26:37 root] (omniquant.py 289): INFO layer 22 iter 0 loss:0.09775115549564362 norm:0.0019085423555225134 max memory_allocated 27172.8994140625 
+[2025-03-26 15:27:26 root] (omniquant.py 289): INFO layer 22 iter 1 loss:0.09599430114030838 norm:0.0007129039731808007 max memory_allocated 27172.8994140625 
+[2025-03-26 15:28:14 root] (omniquant.py 289): INFO layer 22 iter 2 loss:0.09459570050239563 norm:0.0006289852899499238 max memory_allocated 27172.8994140625 
+[2025-03-26 15:29:02 root] (omniquant.py 289): INFO layer 22 iter 3 loss:0.09379956871271133 norm:0.000548533396795392 max memory_allocated 27172.8994140625 
+[2025-03-26 15:29:51 root] (omniquant.py 289): INFO layer 22 iter 4 loss:0.09341320395469666 norm:0.0004865982919000089 max memory_allocated 27172.8994140625 
+[2025-03-26 15:30:39 root] (omniquant.py 289): INFO layer 22 iter 5 loss:0.0930095985531807 norm:0.0004615721700247377 max memory_allocated 27172.8994140625 
+[2025-03-26 15:31:28 root] (omniquant.py 289): INFO layer 22 iter 6 loss:0.09266544878482819 norm:0.0004463051736820489 max memory_allocated 27172.8994140625 
+[2025-03-26 15:32:17 root] (omniquant.py 289): INFO layer 22 iter 7 loss:0.09240908920764923 norm:0.0004141636600252241 max memory_allocated 27172.8994140625 
+[2025-03-26 15:33:05 root] (omniquant.py 289): INFO layer 22 iter 8 loss:0.09221811592578888 norm:0.000407637853641063 max memory_allocated 27172.8994140625 
+[2025-03-26 15:33:53 root] (omniquant.py 289): INFO layer 22 iter 9 loss:0.09209329634904861 norm:0.0004000386397819966 max memory_allocated 27172.8994140625 
+[2025-03-26 15:34:08 root] (omniquant.py 193): INFO === Start quantize layer 23 ===
+[2025-03-26 15:35:00 root] (omniquant.py 289): INFO layer 23 iter 0 loss:0.11208846420049667 norm:0.0010580980451777577 max memory_allocated 27174.9619140625 
+[2025-03-26 15:35:49 root] (omniquant.py 289): INFO layer 23 iter 1 loss:0.11069624871015549 norm:0.0006723185069859028 max memory_allocated 27174.9619140625 
+[2025-03-26 15:36:37 root] (omniquant.py 289): INFO layer 23 iter 2 loss:0.1092018187046051 norm:0.000623067026026547 max memory_allocated 27174.9619140625 
+[2025-03-26 15:37:25 root] (omniquant.py 289): INFO layer 23 iter 3 loss:0.10837393999099731 norm:0.0005664939526468515 max memory_allocated 27174.9619140625 
+[2025-03-26 15:38:14 root] (omniquant.py 289): INFO layer 23 iter 4 loss:0.10793490707874298 norm:0.0005275222356431186 max memory_allocated 27174.9619140625 
+[2025-03-26 15:39:02 root] (omniquant.py 289): INFO layer 23 iter 5 loss:0.10753563791513443 norm:0.0004887902177870274 max memory_allocated 27174.9619140625 
+[2025-03-26 15:39:51 root] (omniquant.py 289): INFO layer 23 iter 6 loss:0.1071762815117836 norm:0.00046887126518413424 max memory_allocated 27174.9619140625 
+[2025-03-26 15:40:39 root] (omniquant.py 289): INFO layer 23 iter 7 loss:0.10691172629594803 norm:0.0004644051368813962 max memory_allocated 27174.9619140625 
+[2025-03-26 15:41:28 root] (omniquant.py 289): INFO layer 23 iter 8 loss:0.10673536360263824 norm:0.0004553193284664303 max memory_allocated 27174.9619140625 
+[2025-03-26 15:42:16 root] (omniquant.py 289): INFO layer 23 iter 9 loss:0.1066369041800499 norm:0.00044107591384090483 max memory_allocated 27174.9619140625 
+[2025-03-26 15:42:30 root] (omniquant.py 193): INFO === Start quantize layer 24 ===
+[2025-03-26 15:43:22 root] (omniquant.py 289): INFO layer 24 iter 0 loss:0.1277967393398285 norm:0.002744810190051794 max memory_allocated 27177.0244140625 
+[2025-03-26 15:44:11 root] (omniquant.py 289): INFO layer 24 iter 1 loss:0.12597112357616425 norm:0.0013727068435400724 max memory_allocated 27177.0244140625 
+[2025-03-26 15:44:59 root] (omniquant.py 289): INFO layer 24 iter 2 loss:0.12444360554218292 norm:0.0012010443024337292 max memory_allocated 27177.0244140625 
+[2025-03-26 15:45:47 root] (omniquant.py 289): INFO layer 24 iter 3 loss:0.12352962791919708 norm:0.0010789971565827727 max memory_allocated 27177.0244140625 
+[2025-03-26 15:46:35 root] (omniquant.py 289): INFO layer 24 iter 4 loss:0.12306291610002518 norm:0.0009271891904063523 max memory_allocated 27177.0244140625 
+[2025-03-26 15:47:24 root] (omniquant.py 289): INFO layer 24 iter 5 loss:0.12259112298488617 norm:0.0008730904082767665 max memory_allocated 27177.0244140625 
+[2025-03-26 15:48:12 root] (omniquant.py 289): INFO layer 24 iter 6 loss:0.12218955159187317 norm:0.0008203843608498573 max memory_allocated 27177.0244140625 
+[2025-03-26 15:49:00 root] (omniquant.py 289): INFO layer 24 iter 7 loss:0.12190335988998413 norm:0.0007641145493835211 max memory_allocated 27177.0244140625 
+[2025-03-26 15:49:49 root] (omniquant.py 289): INFO layer 24 iter 8 loss:0.1217312216758728 norm:0.000730339321307838 max memory_allocated 27177.0244140625 
+[2025-03-26 15:50:37 root] (omniquant.py 289): INFO layer 24 iter 9 loss:0.12164360284805298 norm:0.0007104919641278684 max memory_allocated 27177.0244140625 
+[2025-03-26 15:50:52 root] (omniquant.py 193): INFO === Start quantize layer 25 ===
+[2025-03-26 15:51:44 root] (omniquant.py 289): INFO layer 25 iter 0 loss:0.14349356293678284 norm:0.0014914876082912087 max memory_allocated 27179.0869140625 
+[2025-03-26 15:52:33 root] (omniquant.py 289): INFO layer 25 iter 1 loss:0.14204192161560059 norm:0.000860754051245749 max memory_allocated 27179.0869140625 
+[2025-03-26 15:53:21 root] (omniquant.py 289): INFO layer 25 iter 2 loss:0.14050470292568207 norm:0.0007163115660659969 max memory_allocated 27179.0869140625 
+[2025-03-26 15:54:10 root] (omniquant.py 289): INFO layer 25 iter 3 loss:0.13962796330451965 norm:0.0006571245612576604 max memory_allocated 27179.0869140625 
+[2025-03-26 15:54:58 root] (omniquant.py 289): INFO layer 25 iter 4 loss:0.13913428783416748 norm:0.000631449802313 max memory_allocated 27179.0869140625 
+[2025-03-26 15:55:47 root] (omniquant.py 289): INFO layer 25 iter 5 loss:0.1386127918958664 norm:0.0005946208839304745 max memory_allocated 27179.0869140625 
+[2025-03-26 15:56:35 root] (omniquant.py 289): INFO layer 25 iter 6 loss:0.1382029950618744 norm:0.0005686796503141522 max memory_allocated 27179.0869140625 
+[2025-03-26 15:57:24 root] (omniquant.py 289): INFO layer 25 iter 7 loss:0.1379333734512329 norm:0.0005528202746063471 max memory_allocated 27179.0869140625 
+[2025-03-26 15:58:12 root] (omniquant.py 289): INFO layer 25 iter 8 loss:0.13779225945472717 norm:0.0005498512764461339 max memory_allocated 27179.0869140625 
+[2025-03-26 15:59:00 root] (omniquant.py 289): INFO layer 25 iter 9 loss:0.1377115249633789 norm:0.0005352386506274343 max memory_allocated 27179.0869140625 
+[2025-03-26 15:59:15 root] (omniquant.py 193): INFO === Start quantize layer 26 ===
+[2025-03-26 16:00:06 root] (omniquant.py 289): INFO layer 26 iter 0 loss:0.16365934908390045 norm:0.001511499285697937 max memory_allocated 27181.1494140625 
+[2025-03-26 16:00:55 root] (omniquant.py 289): INFO layer 26 iter 1 loss:0.16217726469039917 norm:0.001218809513375163 max memory_allocated 27181.1494140625 
+[2025-03-26 16:01:43 root] (omniquant.py 289): INFO layer 26 iter 2 loss:0.1604202836751938 norm:0.0011038504308089614 max memory_allocated 27181.1494140625 
+[2025-03-26 16:02:32 root] (omniquant.py 289): INFO layer 26 iter 3 loss:0.15949639678001404 norm:0.0009908160427585244 max memory_allocated 27181.1494140625 
+[2025-03-26 16:03:20 root] (omniquant.py 289): INFO layer 26 iter 4 loss:0.15891128778457642 norm:0.0009588089887984097 max memory_allocated 27181.1494140625 
+[2025-03-26 16:04:09 root] (omniquant.py 289): INFO layer 26 iter 5 loss:0.15833529829978943 norm:0.0009221664513461292 max memory_allocated 27181.1494140625 
+[2025-03-26 16:04:57 root] (omniquant.py 289): INFO layer 26 iter 6 loss:0.15789175033569336 norm:0.0008674983400851488 max memory_allocated 27181.1494140625 
+[2025-03-26 16:05:45 root] (omniquant.py 289): INFO layer 26 iter 7 loss:0.15762779116630554 norm:0.0008506123558618128 max memory_allocated 27181.1494140625 
+[2025-03-26 16:06:34 root] (omniquant.py 289): INFO layer 26 iter 8 loss:0.15749269723892212 norm:0.0008425521082244813 max memory_allocated 27181.1494140625 
+[2025-03-26 16:07:22 root] (omniquant.py 289): INFO layer 26 iter 9 loss:0.15739955008029938 norm:0.0008289116085506976 max memory_allocated 27181.1494140625 
+[2025-03-26 16:07:37 root] (omniquant.py 193): INFO === Start quantize layer 27 ===
+[2025-03-26 16:08:29 root] (omniquant.py 289): INFO layer 27 iter 0 loss:0.1804000288248062 norm:0.0009434866951778531 max memory_allocated 27183.2119140625 
+[2025-03-26 16:09:18 root] (omniquant.py 289): INFO layer 27 iter 1 loss:0.1792074590921402 norm:0.000648959307000041 max memory_allocated 27183.2119140625 
+[2025-03-26 16:10:06 root] (omniquant.py 289): INFO layer 27 iter 2 loss:0.17757004499435425 norm:0.0005874529015272856 max memory_allocated 27183.2119140625 
+[2025-03-26 16:10:54 root] (omniquant.py 289): INFO layer 27 iter 3 loss:0.1767600029706955 norm:0.000541407207492739 max memory_allocated 27183.2119140625 
+[2025-03-26 16:11:43 root] (omniquant.py 289): INFO layer 27 iter 4 loss:0.17622703313827515 norm:0.0005093634244985878 max memory_allocated 27183.2119140625 
+[2025-03-26 16:12:31 root] (omniquant.py 289): INFO layer 27 iter 5 loss:0.17564356327056885 norm:0.0005038270028308034 max memory_allocated 27183.2119140625 
+[2025-03-26 16:13:19 root] (omniquant.py 289): INFO layer 27 iter 6 loss:0.17518135905265808 norm:0.00047901642392389476 max memory_allocated 27183.2119140625 
+[2025-03-26 16:14:08 root] (omniquant.py 289): INFO layer 27 iter 7 loss:0.17494429647922516 norm:0.00046490863314829767 max memory_allocated 27183.2119140625 
+[2025-03-26 16:14:57 root] (omniquant.py 289): INFO layer 27 iter 8 loss:0.17484301328659058 norm:0.00046048121294006705 max memory_allocated 27183.2119140625 
+[2025-03-26 16:15:45 root] (omniquant.py 289): INFO layer 27 iter 9 loss:0.17476819455623627 norm:0.00043812309741042554 max memory_allocated 27183.2119140625 
+[2025-03-26 16:15:59 root] (omniquant.py 193): INFO === Start quantize layer 28 ===
+[2025-03-26 16:16:52 root] (omniquant.py 289): INFO layer 28 iter 0 loss:0.20379385352134705 norm:0.00447301659733057 max memory_allocated 27185.2744140625 
+[2025-03-26 16:17:40 root] (omniquant.py 289): INFO layer 28 iter 1 loss:0.202024444937706 norm:0.0029972377233207226 max memory_allocated 27185.2744140625 
+[2025-03-26 16:18:28 root] (omniquant.py 289): INFO layer 28 iter 2 loss:0.20004670321941376 norm:0.0026674908585846424 max memory_allocated 27185.2744140625 
+[2025-03-26 16:19:17 root] (omniquant.py 289): INFO layer 28 iter 3 loss:0.19897842407226562 norm:0.0024503017775714397 max memory_allocated 27185.2744140625 
+[2025-03-26 16:20:05 root] (omniquant.py 289): INFO layer 28 iter 4 loss:0.19827011227607727 norm:0.0022746575996279716 max memory_allocated 27185.2744140625 
+[2025-03-26 16:20:54 root] (omniquant.py 289): INFO layer 28 iter 5 loss:0.19756726920604706 norm:0.002110738307237625 max memory_allocated 27185.2744140625 
+[2025-03-26 16:21:42 root] (omniquant.py 289): INFO layer 28 iter 6 loss:0.19708837568759918 norm:0.002095699543133378 max memory_allocated 27185.2744140625 
+[2025-03-26 16:22:30 root] (omniquant.py 289): INFO layer 28 iter 7 loss:0.19685664772987366 norm:0.001986914547160268 max memory_allocated 27185.2744140625 
+[2025-03-26 16:23:19 root] (omniquant.py 289): INFO layer 28 iter 8 loss:0.19671884179115295 norm:0.0018909889040514827 max memory_allocated 27185.2744140625 
+[2025-03-26 16:24:07 root] (omniquant.py 289): INFO layer 28 iter 9 loss:0.19666437804698944 norm:0.0018877647817134857 max memory_allocated 27185.2744140625 
+[2025-03-26 16:24:22 root] (omniquant.py 193): INFO === Start quantize layer 29 ===
+[2025-03-26 16:25:13 root] (omniquant.py 289): INFO layer 29 iter 0 loss:0.22512352466583252 norm:0.0010400391183793545 max memory_allocated 27187.3369140625 
+[2025-03-26 16:26:02 root] (omniquant.py 289): INFO layer 29 iter 1 loss:0.22386744618415833 norm:0.0007775608100928366 max memory_allocated 27187.3369140625 
+[2025-03-26 16:26:50 root] (omniquant.py 289): INFO layer 29 iter 2 loss:0.22203420102596283 norm:0.000714328489266336 max memory_allocated 27187.3369140625 
+[2025-03-26 16:27:39 root] (omniquant.py 289): INFO layer 29 iter 3 loss:0.22106246650218964 norm:0.0006786218727938831 max memory_allocated 27187.3369140625 
+[2025-03-26 16:28:27 root] (omniquant.py 289): INFO layer 29 iter 4 loss:0.22036924958229065 norm:0.0006809558253735304 max memory_allocated 27187.3369140625 
+[2025-03-26 16:29:15 root] (omniquant.py 289): INFO layer 29 iter 5 loss:0.21970689296722412 norm:0.000649281544610858 max memory_allocated 27187.3369140625 
+[2025-03-26 16:30:03 root] (omniquant.py 289): INFO layer 29 iter 6 loss:0.21932055056095123 norm:0.0006526625948026776 max memory_allocated 27187.3369140625 
+[2025-03-26 16:30:52 root] (omniquant.py 289): INFO layer 29 iter 7 loss:0.21913735568523407 norm:0.0006421851576305926 max memory_allocated 27187.3369140625 
+[2025-03-26 16:31:41 root] (omniquant.py 289): INFO layer 29 iter 8 loss:0.2190490961074829 norm:0.0006139817414805293 max memory_allocated 27187.3369140625 
+[2025-03-26 16:32:29 root] (omniquant.py 289): INFO layer 29 iter 9 loss:0.21897968649864197 norm:0.0006052285898476839 max memory_allocated 27187.3369140625 
+[2025-03-26 16:32:43 root] (omniquant.py 193): INFO === Start quantize layer 30 ===
+[2025-03-26 16:33:36 root] (omniquant.py 289): INFO layer 30 iter 0 loss:0.24980708956718445 norm:0.0012755991192534566 max memory_allocated 27189.3994140625 
+[2025-03-26 16:34:23 root] (omniquant.py 289): INFO layer 30 iter 1 loss:0.2480315864086151 norm:0.0008008964941836894 max memory_allocated 27189.3994140625 
+[2025-03-26 16:35:12 root] (omniquant.py 289): INFO layer 30 iter 2 loss:0.24590878188610077 norm:0.000670075009111315 max memory_allocated 27189.3994140625 
+[2025-03-26 16:36:00 root] (omniquant.py 289): INFO layer 30 iter 3 loss:0.24475038051605225 norm:0.0006068733055144548 max memory_allocated 27189.3994140625 
+[2025-03-26 16:36:49 root] (omniquant.py 289): INFO layer 30 iter 4 loss:0.24381907284259796 norm:0.0005806320114061236 max memory_allocated 27189.3994140625 
+[2025-03-26 16:37:37 root] (omniquant.py 289): INFO layer 30 iter 5 loss:0.24305033683776855 norm:0.0005559272831305861 max memory_allocated 27189.3994140625 
+[2025-03-26 16:38:26 root] (omniquant.py 289): INFO layer 30 iter 6 loss:0.24267035722732544 norm:0.0005317080649547279 max memory_allocated 27189.3994140625 
+[2025-03-26 16:39:14 root] (omniquant.py 289): INFO layer 30 iter 7 loss:0.2424951046705246 norm:0.0005084996810182929 max memory_allocated 27189.3994140625 
+[2025-03-26 16:40:03 root] (omniquant.py 289): INFO layer 30 iter 8 loss:0.242412269115448 norm:0.0004948488785885274 max memory_allocated 27189.3994140625 
+[2025-03-26 16:40:51 root] (omniquant.py 289): INFO layer 30 iter 9 loss:0.24234798550605774 norm:0.00048288630205206573 max memory_allocated 27189.3994140625 
+[2025-03-26 16:41:06 root] (omniquant.py 193): INFO === Start quantize layer 31 ===
+[2025-03-26 16:41:58 root] (omniquant.py 289): INFO layer 31 iter 0 loss:0.2747569680213928 norm:0.0008997537079267204 max memory_allocated 27191.4619140625 
+[2025-03-26 16:42:46 root] (omniquant.py 289): INFO layer 31 iter 1 loss:0.2732350528240204 norm:0.0006730483146384358 max memory_allocated 27191.4619140625 
+[2025-03-26 16:43:34 root] (omniquant.py 289): INFO layer 31 iter 2 loss:0.27112245559692383 norm:0.0006364190485328436 max memory_allocated 27191.4619140625 
+[2025-03-26 16:44:23 root] (omniquant.py 289): INFO layer 31 iter 3 loss:0.2698877155780792 norm:0.0005506098968908191 max memory_allocated 27191.4619140625 
+[2025-03-26 16:45:11 root] (omniquant.py 289): INFO layer 31 iter 4 loss:0.2689209580421448 norm:0.0005265508079901338 max memory_allocated 27191.4619140625 
+[2025-03-26 16:46:00 root] (omniquant.py 289): INFO layer 31 iter 5 loss:0.2681998908519745 norm:0.000488260731799528 max memory_allocated 27191.4619140625 
+[2025-03-26 16:46:48 root] (omniquant.py 289): INFO layer 31 iter 6 loss:0.2678995132446289 norm:0.000474992033559829 max memory_allocated 27191.4619140625 
+[2025-03-26 16:47:37 root] (omniquant.py 289): INFO layer 31 iter 7 loss:0.26777371764183044 norm:0.0004709093482233584 max memory_allocated 27191.4619140625 
+[2025-03-26 16:48:26 root] (omniquant.py 289): INFO layer 31 iter 8 loss:0.2677070200443268 norm:0.0004449072293937206 max memory_allocated 27191.4619140625 
+[2025-03-26 16:49:14 root] (omniquant.py 289): INFO layer 31 iter 9 loss:0.2676512897014618 norm:0.0004397201701067388 max memory_allocated 27191.4619140625 
+[2025-03-26 16:49:29 root] (omniquant.py 193): INFO === Start quantize layer 32 ===
+[2025-03-26 16:50:21 root] (omniquant.py 289): INFO layer 32 iter 0 loss:0.3051021695137024 norm:0.001170534873381257 max memory_allocated 27193.5244140625 
+[2025-03-26 16:51:09 root] (omniquant.py 289): INFO layer 32 iter 1 loss:0.3031506836414337 norm:0.0009051748784258962 max memory_allocated 27193.5244140625 
+[2025-03-26 16:51:58 root] (omniquant.py 289): INFO layer 32 iter 2 loss:0.3005412518978119 norm:0.0008448802400380373 max memory_allocated 27193.5244140625 
+[2025-03-26 16:52:46 root] (omniquant.py 289): INFO layer 32 iter 3 loss:0.29909178614616394 norm:0.0007620854885317385 max memory_allocated 27193.5244140625 
+[2025-03-26 16:53:35 root] (omniquant.py 289): INFO layer 32 iter 4 loss:0.29796087741851807 norm:0.0007314383401535451 max memory_allocated 27193.5244140625 
+[2025-03-26 16:54:23 root] (omniquant.py 289): INFO layer 32 iter 5 loss:0.2972358465194702 norm:0.0007095187902450562 max memory_allocated 27193.5244140625 
+[2025-03-26 16:55:11 root] (omniquant.py 289): INFO layer 32 iter 6 loss:0.2969279885292053 norm:0.0006744631100445986 max memory_allocated 27193.5244140625 
+[2025-03-26 16:56:00 root] (omniquant.py 289): INFO layer 32 iter 7 loss:0.29679301381111145 norm:0.0006485274061560631 max memory_allocated 27193.5244140625 
+[2025-03-26 16:56:49 root] (omniquant.py 289): INFO layer 32 iter 8 loss:0.2967112958431244 norm:0.0006274713668972254 max memory_allocated 27193.5244140625 
+[2025-03-26 16:57:37 root] (omniquant.py 289): INFO layer 32 iter 9 loss:0.29665520787239075 norm:0.0006348957540467381 max memory_allocated 27193.5244140625 
+[2025-03-26 16:57:51 root] (omniquant.py 193): INFO === Start quantize layer 33 ===
+[2025-03-26 16:58:43 root] (omniquant.py 289): INFO layer 33 iter 0 loss:0.3373596966266632 norm:0.002730698324739933 max memory_allocated 27195.5869140625 
+[2025-03-26 16:59:32 root] (omniquant.py 289): INFO layer 33 iter 1 loss:0.334394633769989 norm:0.0010692711221054196 max memory_allocated 27195.5869140625 
+[2025-03-26 17:00:20 root] (omniquant.py 289): INFO layer 33 iter 2 loss:0.33153852820396423 norm:0.0009630497661419213 max memory_allocated 27195.5869140625 
+[2025-03-26 17:01:09 root] (omniquant.py 289): INFO layer 33 iter 3 loss:0.33003830909729004 norm:0.0009092919062823057 max memory_allocated 27195.5869140625 
+[2025-03-26 17:01:57 root] (omniquant.py 289): INFO layer 33 iter 4 loss:0.32880428433418274 norm:0.0008548044716008008 max memory_allocated 27195.5869140625 
+[2025-03-26 17:02:45 root] (omniquant.py 289): INFO layer 33 iter 5 loss:0.3281221389770508 norm:0.0008428378496319056 max memory_allocated 27195.5869140625 
+[2025-03-26 17:03:34 root] (omniquant.py 289): INFO layer 33 iter 6 loss:0.3277784287929535 norm:0.0008231101091951132 max memory_allocated 27195.5869140625 
+[2025-03-26 17:04:22 root] (omniquant.py 289): INFO layer 33 iter 7 loss:0.3276313841342926 norm:0.0008175362017937005 max memory_allocated 27195.5869140625 
+[2025-03-26 17:05:11 root] (omniquant.py 289): INFO layer 33 iter 8 loss:0.32752975821495056 norm:0.0007989807054400444 max memory_allocated 27195.5869140625 
+[2025-03-26 17:06:00 root] (omniquant.py 289): INFO layer 33 iter 9 loss:0.32746338844299316 norm:0.00080074806464836 max memory_allocated 27195.5869140625 
+[2025-03-26 17:06:14 root] (omniquant.py 193): INFO === Start quantize layer 34 ===
+[2025-03-26 17:07:07 root] (omniquant.py 289): INFO layer 34 iter 0 loss:0.3761962652206421 norm:0.0015187085373327136 max memory_allocated 27197.6494140625 
+[2025-03-26 17:07:55 root] (omniquant.py 289): INFO layer 34 iter 1 loss:0.3733663558959961 norm:0.0011724610812962055 max memory_allocated 27197.6494140625 
+[2025-03-26 17:08:44 root] (omniquant.py 289): INFO layer 34 iter 2 loss:0.369997501373291 norm:0.0010639261454343796 max memory_allocated 27197.6494140625 
+[2025-03-26 17:09:32 root] (omniquant.py 289): INFO layer 34 iter 3 loss:0.3682032823562622 norm:0.00100955821108073 max memory_allocated 27197.6494140625 
+[2025-03-26 17:10:21 root] (omniquant.py 289): INFO layer 34 iter 4 loss:0.36690372228622437 norm:0.0009407430188730359 max memory_allocated 27197.6494140625 
+[2025-03-26 17:11:09 root] (omniquant.py 289): INFO layer 34 iter 5 loss:0.36627447605133057 norm:0.0009676853660494089 max memory_allocated 27197.6494140625 
+[2025-03-26 17:11:57 root] (omniquant.py 289): INFO layer 34 iter 6 loss:0.36604371666908264 norm:0.0009816433303058147 max memory_allocated 27197.6494140625 
+[2025-03-26 17:12:45 root] (omniquant.py 289): INFO layer 34 iter 7 loss:0.3659038543701172 norm:0.0009140826296061277 max memory_allocated 27197.6494140625 
+[2025-03-26 17:13:34 root] (omniquant.py 289): INFO layer 34 iter 8 loss:0.36581888794898987 norm:0.0008930779295042157 max memory_allocated 27197.6494140625 
+[2025-03-26 17:14:22 root] (omniquant.py 289): INFO layer 34 iter 9 loss:0.36575865745544434 norm:0.0008500983822159469 max memory_allocated 27197.6494140625 
+[2025-03-26 17:14:36 root] (omniquant.py 193): INFO === Start quantize layer 35 ===
+[2025-03-26 17:15:28 root] (omniquant.py 289): INFO layer 35 iter 0 loss:0.4185042679309845 norm:0.0016434728167951107 max memory_allocated 27199.7119140625 
+[2025-03-26 17:16:17 root] (omniquant.py 289): INFO layer 35 iter 1 loss:0.41508299112319946 norm:0.0011276713339611888 max memory_allocated 27199.7119140625 
+[2025-03-26 17:17:05 root] (omniquant.py 289): INFO layer 35 iter 2 loss:0.41106289625167847 norm:0.0009931034874171019 max memory_allocated 27199.7119140625 
+[2025-03-26 17:17:53 root] (omniquant.py 289): INFO layer 35 iter 3 loss:0.4090110957622528 norm:0.0009181626955978572 max memory_allocated 27199.7119140625 
+[2025-03-26 17:18:42 root] (omniquant.py 289): INFO layer 35 iter 4 loss:0.4075501263141632 norm:0.000877626589499414 max memory_allocated 27199.7119140625 
+[2025-03-26 17:19:30 root] (omniquant.py 289): INFO layer 35 iter 5 loss:0.40692806243896484 norm:0.0008201402379199862 max memory_allocated 27199.7119140625 
+[2025-03-26 17:20:18 root] (omniquant.py 289): INFO layer 35 iter 6 loss:0.40667271614074707 norm:0.0007803085027262568 max memory_allocated 27199.7119140625 
+[2025-03-26 17:21:07 root] (omniquant.py 289): INFO layer 35 iter 7 loss:0.40653151273727417 norm:0.0007568985456600785 max memory_allocated 27199.7119140625 
+[2025-03-26 17:21:55 root] (omniquant.py 289): INFO layer 35 iter 8 loss:0.40644174814224243 norm:0.0007621946861036122 max memory_allocated 27199.7119140625 
+[2025-03-26 17:22:43 root] (omniquant.py 289): INFO layer 35 iter 9 loss:0.4063670039176941 norm:0.0007547363638877869 max memory_allocated 27199.7119140625 
+[2025-03-26 17:22:58 root] (omniquant.py 193): INFO === Start quantize layer 36 ===
+[2025-03-26 17:23:50 root] (omniquant.py 289): INFO layer 36 iter 0 loss:0.4768035113811493 norm:0.003355566179379821 max memory_allocated 27201.7744140625 
+[2025-03-26 17:24:39 root] (omniquant.py 289): INFO layer 36 iter 1 loss:0.47000226378440857 norm:0.0018887112382799387 max memory_allocated 27201.7744140625 
+[2025-03-26 17:25:27 root] (omniquant.py 289): INFO layer 36 iter 2 loss:0.4638660252094269 norm:0.0014455844648182392 max memory_allocated 27201.7744140625 
+[2025-03-26 17:26:15 root] (omniquant.py 289): INFO layer 36 iter 3 loss:0.46062490344047546 norm:0.0011845161207020283 max memory_allocated 27201.7744140625 
+[2025-03-26 17:27:03 root] (omniquant.py 289): INFO layer 36 iter 4 loss:0.4588605761528015 norm:0.0010693472577258945 max memory_allocated 27201.7744140625 
+[2025-03-26 17:27:52 root] (omniquant.py 289): INFO layer 36 iter 5 loss:0.4581744074821472 norm:0.0010041744681075215 max memory_allocated 27201.7744140625 
+[2025-03-26 17:28:41 root] (omniquant.py 289): INFO layer 36 iter 6 loss:0.4578244388103485 norm:0.0009560462785884738 max memory_allocated 27201.7744140625 
+[2025-03-26 17:29:29 root] (omniquant.py 289): INFO layer 36 iter 7 loss:0.4576174318790436 norm:0.0009404720622114837 max memory_allocated 27201.7744140625 
+[2025-03-26 17:30:18 root] (omniquant.py 289): INFO layer 36 iter 8 loss:0.4574456810951233 norm:0.0009151951526291668 max memory_allocated 27201.7744140625 
+[2025-03-26 17:31:06 root] (omniquant.py 289): INFO layer 36 iter 9 loss:0.4573385417461395 norm:0.0008935386431403458 max memory_allocated 27201.7744140625 
+[2025-03-26 17:31:20 root] (omniquant.py 193): INFO === Start quantize layer 37 ===
+[2025-03-26 17:32:12 root] (omniquant.py 289): INFO layer 37 iter 0 loss:0.5437881350517273 norm:0.008939936757087708 max memory_allocated 27203.8369140625 
+[2025-03-26 17:33:01 root] (omniquant.py 289): INFO layer 37 iter 1 loss:0.5332222580909729 norm:0.0030068159103393555 max memory_allocated 27203.8369140625 
+[2025-03-26 17:33:49 root] (omniquant.py 289): INFO layer 37 iter 2 loss:0.5249378085136414 norm:0.0026797279715538025 max memory_allocated 27203.8369140625 
+[2025-03-26 17:34:38 root] (omniquant.py 289): INFO layer 37 iter 3 loss:0.5211131572723389 norm:0.002539091743528843 max memory_allocated 27203.8369140625 
+[2025-03-26 17:35:26 root] (omniquant.py 289): INFO layer 37 iter 4 loss:0.5193277597427368 norm:0.0025139544159173965 max memory_allocated 27203.8369140625 
+[2025-03-26 17:36:14 root] (omniquant.py 289): INFO layer 37 iter 5 loss:0.5184881687164307 norm:0.002377184573560953 max memory_allocated 27203.8369140625 
+[2025-03-26 17:37:03 root] (omniquant.py 289): INFO layer 37 iter 6 loss:0.5180529356002808 norm:0.0023550852201879025 max memory_allocated 27203.8369140625 
+[2025-03-26 17:37:51 root] (omniquant.py 289): INFO layer 37 iter 7 loss:0.5177806615829468 norm:0.0022804620675742626 max memory_allocated 27203.8369140625 
+[2025-03-26 17:38:40 root] (omniquant.py 289): INFO layer 37 iter 8 loss:0.517541229724884 norm:0.002221158007159829 max memory_allocated 27203.8369140625 
+[2025-03-26 17:39:28 root] (omniquant.py 289): INFO layer 37 iter 9 loss:0.5174006223678589 norm:0.002195142675191164 max memory_allocated 27203.8369140625 
+[2025-03-26 17:39:42 root] (omniquant.py 193): INFO === Start quantize layer 38 ===
+[2025-03-26 17:40:35 root] (omniquant.py 289): INFO layer 38 iter 0 loss:0.6778409481048584 norm:0.01016533188521862 max memory_allocated 27205.8994140625 
+[2025-03-26 17:41:23 root] (omniquant.py 289): INFO layer 38 iter 1 loss:0.6607241034507751 norm:0.005316664930433035 max memory_allocated 27205.8994140625 
+[2025-03-26 17:42:11 root] (omniquant.py 289): INFO layer 38 iter 2 loss:0.6455034017562866 norm:0.004871038720011711 max memory_allocated 27205.8994140625 
+[2025-03-26 17:42:59 root] (omniquant.py 289): INFO layer 38 iter 3 loss:0.6370446681976318 norm:0.004245286341756582 max memory_allocated 27205.8994140625 
+[2025-03-26 17:43:48 root] (omniquant.py 289): INFO layer 38 iter 4 loss:0.6319491267204285 norm:0.0037075704894959927 max memory_allocated 27205.8994140625 
+[2025-03-26 17:44:36 root] (omniquant.py 289): INFO layer 38 iter 5 loss:0.6283992528915405 norm:0.003312385408207774 max memory_allocated 27205.8994140625 
+[2025-03-26 17:45:25 root] (omniquant.py 289): INFO layer 38 iter 6 loss:0.6265373229980469 norm:0.0031531774438917637 max memory_allocated 27205.8994140625 
+[2025-03-26 17:46:13 root] (omniquant.py 289): INFO layer 38 iter 7 loss:0.6247851848602295 norm:0.0029322076588869095 max memory_allocated 27205.8994140625 
+[2025-03-26 17:47:01 root] (omniquant.py 289): INFO layer 38 iter 8 loss:0.6235055923461914 norm:0.0028223362751305103 max memory_allocated 27205.8994140625 
+[2025-03-26 17:47:50 root] (omniquant.py 289): INFO layer 38 iter 9 loss:0.6224561929702759 norm:0.002803002018481493 max memory_allocated 27205.8994140625 
+[2025-03-26 17:48:04 root] (omniquant.py 193): INFO === Start quantize layer 39 ===
+[2025-03-26 17:48:56 root] (omniquant.py 289): INFO layer 39 iter 0 loss:1.0053670406341553 norm:0.034900423139333725 max memory_allocated 27207.9619140625 
+[2025-03-26 17:49:45 root] (omniquant.py 289): INFO layer 39 iter 1 loss:0.9390869140625 norm:0.027616579085588455 max memory_allocated 27207.9619140625 
+[2025-03-26 17:50:33 root] (omniquant.py 289): INFO layer 39 iter 2 loss:0.8930401802062988 norm:0.02114519104361534 max memory_allocated 27207.9619140625 
+[2025-03-26 17:51:21 root] (omniquant.py 289): INFO layer 39 iter 3 loss:0.8747003078460693 norm:0.014097853563725948 max memory_allocated 27207.9619140625 
+[2025-03-26 17:52:10 root] (omniquant.py 289): INFO layer 39 iter 4 loss:0.866988480091095 norm:0.013710948638617992 max memory_allocated 27207.9619140625 
+[2025-03-26 17:52:58 root] (omniquant.py 289): INFO layer 39 iter 5 loss:0.8629418611526489 norm:0.011740704998373985 max memory_allocated 27207.9619140625 
+[2025-03-26 17:53:47 root] (omniquant.py 289): INFO layer 39 iter 6 loss:0.8596826195716858 norm:0.010654310695827007 max memory_allocated 27207.9619140625 
+[2025-03-26 17:54:35 root] (omniquant.py 289): INFO layer 39 iter 7 loss:0.8578542470932007 norm:0.01037894282490015 max memory_allocated 27207.9619140625 
+[2025-03-26 17:55:24 root] (omniquant.py 289): INFO layer 39 iter 8 loss:0.8558604717254639 norm:0.009869947098195553 max memory_allocated 27207.9619140625 
+[2025-03-26 17:56:12 root] (omniquant.py 289): INFO layer 39 iter 9 loss:0.8549325466156006 norm:0.010164374485611916 max memory_allocated 27207.9619140625 
+[2025-03-26 17:56:27 root] (main.py 353): INFO 20097.91533279419

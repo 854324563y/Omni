@@ -63,7 +63,15 @@ def simple_evaluate(
         task_names = pattern_match(tasks.split(","), lm_eval.tasks.ALL_TASKS)
     assert tasks != [], "No tasks specified"
     print(f"Selected Tasks: {task_names}")
-    task_dict = lm_eval.tasks.get_task_dict(task_names)
+    # task_dict = lm_eval.tasks.get_task_dict(task_names)
+
+    import dill
+
+    if isinstance(task_names, list) and 'hendrycksTest' in task_names[0]:
+        with open('cache/hendrycksTest.pkl', 'rb') as f:
+            task_dict = dill.load(f)
+    else:
+        task_dict = lm_eval.tasks.get_task_dict(task_names)
 
 
     results = evaluate(
